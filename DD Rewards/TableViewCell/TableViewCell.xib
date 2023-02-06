@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="201" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="DD_Rewards" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="201"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="201"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="A6l-ic-Bio">
+                        <rect key="frame" x="15" y="7.5" width="326" height="100"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22 Nov 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20h-sC-I8g">
+                                <rect key="frame" x="0.0" y="0.0" width="326" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="4CC-WC-lD6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fXT-6h-J0r">
+                                <rect key="frame" x="0.0" y="20" width="326" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBm-34-2O6">
+                                        <rect key="frame" x="276" y="22.5" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="LjT-5t-NSL"/>
+                                            <constraint firstAttribute="width" constant="35" id="RSa-tC-G5u"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="arrow.right.circle.fill" catalog="system"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sf" translatesAutoresizingMaskIntoConstraints="NO" id="gsE-dS-DSl">
+                                        <rect key="frame" x="15" y="15" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Kbj-vl-koq"/>
+                                            <constraint firstAttribute="height" constant="50" id="Q8e-4q-D4y"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50 Spins Plus Coins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgV-ZN-LbT">
+                                        <rect key="frame" x="80" y="15" width="123" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="biv-CA-LMs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22 nov 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1i-xp-VXl">
+                                        <rect key="frame" x="80" y="46" width="56.5" height="11"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="9"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="GgV-ZN-LbT" firstAttribute="leading" secondItem="gsE-dS-DSl" secondAttribute="trailing" constant="15" id="Czq-PM-fT1"/>
+                                    <constraint firstItem="gsE-dS-DSl" firstAttribute="centerY" secondItem="fXT-6h-J0r" secondAttribute="centerY" id="FJC-SL-9Pr"/>
+                                    <constraint firstAttribute="trailing" secondItem="KBm-34-2O6" secondAttribute="trailing" constant="15" id="RYY-rS-aD0"/>
+                                    <constraint firstItem="h1i-xp-VXl" firstAttribute="leading" secondItem="gsE-dS-DSl" secondAttribute="trailing" constant="15" id="V6O-RH-Hes"/>
+                                    <constraint firstItem="GgV-ZN-LbT" firstAttribute="top" secondItem="gsE-dS-DSl" secondAttribute="top" id="dDf-3P-uAf"/>
+                                    <constraint firstItem="h1i-xp-VXl" firstAttribute="top" secondItem="GgV-ZN-LbT" secondAttribute="bottom" constant="15" id="eYb-DZ-4fW"/>
+                                    <constraint firstItem="KBm-34-2O6" firstAttribute="centerY" secondItem="fXT-6h-J0r" secondAttribute="centerY" id="fyH-vR-UHV"/>
+                                    <constraint firstAttribute="height" constant="80" id="iku-SE-Y4O"/>
+                                    <constraint firstItem="gsE-dS-DSl" firstAttribute="leading" secondItem="fXT-6h-J0r" secondAttribute="leading" constant="15" id="kHs-hE-qgm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="20h-sC-I8g" firstAttribute="top" secondItem="A6l-ic-Bio" secondAttribute="top" id="E2W-4L-umt"/>
+                            <constraint firstItem="fXT-6h-J0r" firstAttribute="top" secondItem="20h-sC-I8g" secondAttribute="bottom" constant="5" id="YA6-NB-8yj"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="A6l-ic-Bio" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="SdV-Fq-ti8"/>
+                    <constraint firstItem="A6l-ic-Bio" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7.5" id="VDX-3t-hlT"/>
+                    <constraint firstAttribute="bottom" secondItem="A6l-ic-Bio" secondAttribute="bottom" constant="7.5" id="kRN-ob-qly"/>
+                    <constraint firstAttribute="trailing" secondItem="A6l-ic-Bio" secondAttribute="trailing" constant="15" id="wN2-cv-4eU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="TVCell" destination="H2p-sc-9uM" id="fxi-xj-ecb"/>
+                <outlet property="cellBackArrow" destination="KBm-34-2O6" id="vij-EF-msU"/>
+                <outlet property="cellDateLbl" destination="h1i-xp-VXl" id="xeA-0n-AiS"/>
+                <outlet property="cellImg" destination="gsE-dS-DSl" id="van-W2-SxE"/>
+                <outlet property="cellTitleLbl" destination="GgV-ZN-LbT" id="Mjq-me-hUn"/>
+                <outlet property="cellView" destination="fXT-6h-J0r" id="LnV-np-6nq"/>
+                <outlet property="topDateLbl" destination="20h-sC-I8g" id="xuN-9a-sgP"/>
+            </connections>
+            <point key="canvasLocation" x="150.72463768115944" y="105.46875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.right.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="sf" width="39" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
