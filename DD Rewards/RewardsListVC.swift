@@ -7,11 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RewardsListVC: UIViewController {
 
-    @IBOutlet weak var backButton: UIButton!
+
     @IBOutlet weak var titleText: UILabel!
-    @IBOutlet weak var backBtn: NSLayoutConstraint!
+    @IBOutlet weak var rewardBackButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -26,14 +26,15 @@ class ViewController: UIViewController {
     
     func DecorateUI(){
         view.backgroundColor = UIColor.hexString(hex: "E2630B")
-        backButton.tintColor = UIColor.white
+        rewardBackButton.tintColor = UIColor.white
         titleText.textColor = UIColor.white
     }
     @IBAction func backBtnPressed(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
     }
     
 }
-extension ViewController: UITableViewDataSource, UITableViewDelegate{
+extension RewardsListVC: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 12

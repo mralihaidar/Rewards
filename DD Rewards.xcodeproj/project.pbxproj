@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		18167CDD29910A590065A271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18167CDC29910A590065A271 /* AppDelegate.swift */; };
 		18167CDF29910A590065A271 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18167CDE29910A590065A271 /* SceneDelegate.swift */; };
-		18167CE129910A590065A271 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18167CE029910A590065A271 /* ViewController.swift */; };
+		18167CE129910A590065A271 /* RewardsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18167CE029910A590065A271 /* RewardsListVC.swift */; };
 		18167CE429910A590065A271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18167CE229910A590065A271 /* Main.storyboard */; };
 		18167CE629910A5E0065A271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18167CE529910A5E0065A271 /* Assets.xcassets */; };
 		18167CE929910A5E0065A271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18167CE729910A5E0065A271 /* LaunchScreen.storyboard */; };
@@ -18,13 +18,21 @@
 		1885C68429913AF400C4A159 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1885C68329913AF300C4A159 /* UIColorExtension.swift */; };
 		1885C68A2991411400C4A159 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1885C6882991411400C4A159 /* DetailVC.swift */; };
 		1885C68B2991411400C4A159 /* DetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1885C6892991411400C4A159 /* DetailVC.xib */; };
+		189C2CE1299CF52C00B79C3C /* GamesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C2CE0299CF52C00B79C3C /* GamesListVC.swift */; };
+		189C2CE4299CF9E100B79C3C /* GamesCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C2CE2299CF9E100B79C3C /* GamesCVC.swift */; };
+		189C2CE5299CF9E100B79C3C /* GamesCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189C2CE3299CF9E100B79C3C /* GamesCVC.xib */; };
+		189C2CE7299D789700B79C3C /* coinicon.json in Resources */ = {isa = PBXBuildFile; fileRef = 189C2CE6299D789700B79C3C /* coinicon.json */; };
+		18B4C8A8299BAAC20002764A /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4C8A7299BAAC20002764A /* HomeScreenVC.swift */; };
+		18B4C8AC299BAB770002764A /* HomeCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4C8AA299BAB770002764A /* HomeCVC.swift */; };
+		18B4C8AD299BAB770002764A /* HomeCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B4C8AB299BAB770002764A /* HomeCVC.xib */; };
+		51B88E7E549ACE1D8FB4A876 /* Pods_DD_Rewards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E230491A34F09C11954F8CF9 /* Pods_DD_Rewards.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18167CD929910A590065A271 /* DD Rewards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DD Rewards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18167CDC29910A590065A271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18167CDE29910A590065A271 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18167CE029910A590065A271 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18167CE029910A590065A271 /* RewardsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsListVC.swift; sourceTree = "<group>"; };
 		18167CE329910A590065A271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18167CE529910A5E0065A271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18167CE829910A5E0065A271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +42,16 @@
 		1885C68329913AF300C4A159 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		1885C6882991411400C4A159 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		1885C6892991411400C4A159 /* DetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailVC.xib; sourceTree = "<group>"; };
+		189C2CE0299CF52C00B79C3C /* GamesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesListVC.swift; sourceTree = "<group>"; };
+		189C2CE2299CF9E100B79C3C /* GamesCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesCVC.swift; sourceTree = "<group>"; };
+		189C2CE3299CF9E100B79C3C /* GamesCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesCVC.xib; sourceTree = "<group>"; };
+		189C2CE6299D789700B79C3C /* coinicon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coinicon.json; sourceTree = "<group>"; };
+		18B4C8A7299BAAC20002764A /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
+		18B4C8AA299BAB770002764A /* HomeCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCVC.swift; sourceTree = "<group>"; };
+		18B4C8AB299BAB770002764A /* HomeCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCVC.xib; sourceTree = "<group>"; };
+		7D640F2A5B997EF8347A6583 /* Pods-DD Rewards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DD Rewards.release.xcconfig"; path = "Target Support Files/Pods-DD Rewards/Pods-DD Rewards.release.xcconfig"; sourceTree = "<group>"; };
+		BCA7463454E38D697E5B5986 /* Pods-DD Rewards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DD Rewards.debug.xcconfig"; path = "Target Support Files/Pods-DD Rewards/Pods-DD Rewards.debug.xcconfig"; sourceTree = "<group>"; };
+		E230491A34F09C11954F8CF9 /* Pods_DD_Rewards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DD_Rewards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51B88E7E549ACE1D8FB4A876 /* Pods_DD_Rewards.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +71,8 @@
 			children = (
 				18167CDB29910A590065A271 /* DD Rewards */,
 				18167CDA29910A590065A271 /* Products */,
+				2579326CB661463070DB45FC /* Pods */,
+				D5BD918050472CCC0BC9E56D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,11 +89,14 @@
 			children = (
 				18167CDC29910A590065A271 /* AppDelegate.swift */,
 				18167CDE29910A590065A271 /* SceneDelegate.swift */,
-				18167CE029910A590065A271 /* ViewController.swift */,
+				18167CE229910A590065A271 /* Main.storyboard */,
+				18167CE029910A590065A271 /* RewardsListVC.swift */,
+				18B4C8A9299BAB240002764A /* HomeScreenVC */,
+				189C2CD7299CEA4C00B79C3C /* GamesListVC */,
 				1885C6872991409E00C4A159 /* TableViewCell */,
 				1885C6862991408D00C4A159 /* DetailVC */,
-				18167CE229910A590065A271 /* Main.storyboard */,
 				18167CE529910A5E0065A271 /* Assets.xcassets */,
+				189C2CE6299D789700B79C3C /* coinicon.json */,
 				18167CE729910A5E0065A271 /* LaunchScreen.storyboard */,
 				18167CEA29910A5E0065A271 /* Info.plist */,
 				1885C68529913AFA00C4A159 /* Fonts */,
@@ -106,6 +130,43 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
+		189C2CD7299CEA4C00B79C3C /* GamesListVC */ = {
+			isa = PBXGroup;
+			children = (
+				189C2CE0299CF52C00B79C3C /* GamesListVC.swift */,
+				189C2CE2299CF9E100B79C3C /* GamesCVC.swift */,
+				189C2CE3299CF9E100B79C3C /* GamesCVC.xib */,
+			);
+			path = GamesListVC;
+			sourceTree = "<group>";
+		};
+		18B4C8A9299BAB240002764A /* HomeScreenVC */ = {
+			isa = PBXGroup;
+			children = (
+				18B4C8A7299BAAC20002764A /* HomeScreenVC.swift */,
+				18B4C8AA299BAB770002764A /* HomeCVC.swift */,
+				18B4C8AB299BAB770002764A /* HomeCVC.xib */,
+			);
+			path = HomeScreenVC;
+			sourceTree = "<group>";
+		};
+		2579326CB661463070DB45FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCA7463454E38D697E5B5986 /* Pods-DD Rewards.debug.xcconfig */,
+				7D640F2A5B997EF8347A6583 /* Pods-DD Rewards.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D5BD918050472CCC0BC9E56D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E230491A34F09C11954F8CF9 /* Pods_DD_Rewards.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18167CED29910A5E0065A271 /* Build configuration list for PBXNativeTarget "DD Rewards" */;
 			buildPhases = (
+				31C22EA82D3C8ACFBBDB753A /* [CP] Check Pods Manifest.lock */,
 				18167CD529910A590065A271 /* Sources */,
 				18167CD629910A590065A271 /* Frameworks */,
 				18167CD729910A590065A271 /* Resources */,
+				0A6976C070003F6969618BB7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,22 +230,71 @@
 				18167CE929910A5E0065A271 /* LaunchScreen.storyboard in Resources */,
 				1885C68229912CEC00C4A159 /* TableViewCell.xib in Resources */,
 				18167CE629910A5E0065A271 /* Assets.xcassets in Resources */,
+				189C2CE7299D789700B79C3C /* coinicon.json in Resources */,
+				189C2CE5299CF9E100B79C3C /* GamesCVC.xib in Resources */,
 				18167CE429910A590065A271 /* Main.storyboard in Resources */,
 				1885C68B2991411400C4A159 /* DetailVC.xib in Resources */,
+				18B4C8AD299BAB770002764A /* HomeCVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A6976C070003F6969618BB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DD Rewards/Pods-DD Rewards-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DD Rewards/Pods-DD Rewards-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DD Rewards/Pods-DD Rewards-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31C22EA82D3C8ACFBBDB753A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DD Rewards-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18167CD529910A590065A271 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18167CE129910A590065A271 /* ViewController.swift in Sources */,
+				189C2CE4299CF9E100B79C3C /* GamesCVC.swift in Sources */,
+				189C2CE1299CF52C00B79C3C /* GamesListVC.swift in Sources */,
+				18167CE129910A590065A271 /* RewardsListVC.swift in Sources */,
 				1885C68129912CEC00C4A159 /* TableViewCell.swift in Sources */,
 				1885C68429913AF400C4A159 /* UIColorExtension.swift in Sources */,
 				18167CDD29910A590065A271 /* AppDelegate.swift in Sources */,
+				18B4C8A8299BAAC20002764A /* HomeScreenVC.swift in Sources */,
+				18B4C8AC299BAB770002764A /* HomeCVC.swift in Sources */,
 				18167CDF29910A590065A271 /* SceneDelegate.swift in Sources */,
 				1885C68A2991411400C4A159 /* DetailVC.swift in Sources */,
 			);
@@ -326,6 +438,7 @@
 		};
 		18167CEE29910A5E0065A271 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCA7463454E38D697E5B5986 /* Pods-DD Rewards.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -353,6 +466,7 @@
 		};
 		18167CEF29910A5E0065A271 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D640F2A5B997EF8347A6583 /* Pods-DD Rewards.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
