@@ -14,7 +14,7 @@ class GamesCVC: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        gameImg.layer.cornerRadius = 8
+        gameImg.layer.cornerRadius = 10
         gameImg.layer.masksToBounds = true
     }
 

@@ -6,8 +6,8 @@
 //
 
 import UIKit
-
-class HomeScreenVC: UIViewController {
+import MessageUI
+class HomeScreenVC: UIViewController, MFMailComposeViewControllerDelegate {
 
     @IBOutlet weak var homeCollectionView: UICollectionView!
     @IBOutlet weak var homeTitleView: UIView!
@@ -25,8 +25,8 @@ class HomeScreenVC: UIViewController {
         homeCollectionView.register(UINib(nibName: "HomeCVC", bundle: nil), forCellWithReuseIdentifier: "HomeCVC")
         self.navigationController?.isNavigationBarHidden = true
         homeTitleView.layer.cornerRadius = 10
-        titleLabel.textColor = UIColor.white
-        discLabel.textColor = UIColor.white
+        titleLabel.textColor = UIColor.black
+        discLabel.textColor = UIColor.black
         
     }
 }
@@ -59,9 +59,25 @@ extension HomeScreenVC: UICollectionViewDataSource, UICollectionViewDelegate, UI
         if indexPath.item == 0 {
             let storyboard = self.storyboard?.instantiateViewController(withIdentifier: "RewardsListVC") as! RewardsListVC
             self.navigationController?.pushViewController(storyboard, animated: true)
-        } else {
+        } else if indexPath.item == 1 {
             let storyboard = self.storyboard?.instantiateViewController(withIdentifier: "GamesListVC") as! GamesListVC
             self.navigationController?.pushViewController(storyboard, animated: true)
+        } else if indexPath.item == 2 {
+            guard let url = URL(string: "https://appsomagic.blogspot.com/p/privacy-policy-for-match-masters.html") else { return }
+            UIApplication.shared.open(url)
+        } else if indexPath.item == 3 {
+            if let name = URL(string: "https://apps.apple.com/pk/app/twitter/id1482454543?mt=12"), !name.absoluteString.isEmpty {
+              let objectsToShare = [name]
+              let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+              self.present(activityVC, animated: true, completion: nil)
+            }
+        } else if indexPath.item == 4 {
+            guard let url = URL(string: "https://appsomagic.blogspot.com/p/privacy-policy-for-match-masters.html") else { return }
+            UIApplication.shared.open(url)
+        } else if indexPath.item == 5 {
+            guard let url = URL(string: "https://mail.google.com/mail/?view=cm&to=mrumair09@example.com") else { return }
+            UIApplication.shared.open(url)
         }
+        
     }
 }

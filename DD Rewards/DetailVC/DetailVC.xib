@@ -197,6 +197,9 @@
             <point key="canvasLocation" x="136.23188405797103" y="62.276785714285708"/>
         </view>
     </objects>
+    <designables>
+        <designable name="imJ-uF-c0i"/>
+    </designables>
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="arrow.right" catalog="system" width="128" height="98"/>

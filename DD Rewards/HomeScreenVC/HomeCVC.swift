@@ -16,7 +16,7 @@ class HomeCVC: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        collectionCellView.backgroundColor = UIColor.systemGray6
+        collectionCellView.backgroundColor = UIColor.hexString(hex: "#F5F5F5")
         collectionCellView.layer.cornerRadius = 8
     }
 
