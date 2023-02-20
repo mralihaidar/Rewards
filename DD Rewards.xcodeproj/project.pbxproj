@@ -22,6 +22,9 @@
 		189C2CE4299CF9E100B79C3C /* GamesCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C2CE2299CF9E100B79C3C /* GamesCVC.swift */; };
 		189C2CE5299CF9E100B79C3C /* GamesCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189C2CE3299CF9E100B79C3C /* GamesCVC.xib */; };
 		189C2CE7299D789700B79C3C /* coinicon.json in Resources */ = {isa = PBXBuildFile; fileRef = 189C2CE6299D789700B79C3C /* coinicon.json */; };
+		18A26288299E43B80034551A /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A26287299E43B80034551A /* Services.swift */; };
+		18A2628A299E4AA00034551A /* Rewards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A26289299E4AA00034551A /* Rewards.swift */; };
+		18AB5292299FAA4D001C2797 /* rocket1.json in Resources */ = {isa = PBXBuildFile; fileRef = 18AB5291299FAA4D001C2797 /* rocket1.json */; };
 		18B4C8A8299BAAC20002764A /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4C8A7299BAAC20002764A /* HomeScreenVC.swift */; };
 		18B4C8AC299BAB770002764A /* HomeCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4C8AA299BAB770002764A /* HomeCVC.swift */; };
 		18B4C8AD299BAB770002764A /* HomeCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B4C8AB299BAB770002764A /* HomeCVC.xib */; };
@@ -46,6 +49,9 @@
 		189C2CE2299CF9E100B79C3C /* GamesCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesCVC.swift; sourceTree = "<group>"; };
 		189C2CE3299CF9E100B79C3C /* GamesCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesCVC.xib; sourceTree = "<group>"; };
 		189C2CE6299D789700B79C3C /* coinicon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coinicon.json; sourceTree = "<group>"; };
+		18A26287299E43B80034551A /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		18A26289299E4AA00034551A /* Rewards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rewards.swift; sourceTree = "<group>"; };
+		18AB5291299FAA4D001C2797 /* rocket1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rocket1.json; sourceTree = "<group>"; };
 		18B4C8A7299BAAC20002764A /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
 		18B4C8AA299BAB770002764A /* HomeCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCVC.swift; sourceTree = "<group>"; };
 		18B4C8AB299BAB770002764A /* HomeCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCVC.xib; sourceTree = "<group>"; };
@@ -95,7 +101,10 @@
 				189C2CD7299CEA4C00B79C3C /* GamesListVC */,
 				1885C6872991409E00C4A159 /* TableViewCell */,
 				1885C6862991408D00C4A159 /* DetailVC */,
+				18A26287299E43B80034551A /* Services.swift */,
+				18A26289299E4AA00034551A /* Rewards.swift */,
 				18167CE529910A5E0065A271 /* Assets.xcassets */,
+				18AB5291299FAA4D001C2797 /* rocket1.json */,
 				189C2CE6299D789700B79C3C /* coinicon.json */,
 				18167CE729910A5E0065A271 /* LaunchScreen.storyboard */,
 				18167CEA29910A5E0065A271 /* Info.plist */,
@@ -232,6 +241,7 @@
 				18167CE629910A5E0065A271 /* Assets.xcassets in Resources */,
 				189C2CE7299D789700B79C3C /* coinicon.json in Resources */,
 				189C2CE5299CF9E100B79C3C /* GamesCVC.xib in Resources */,
+				18AB5292299FAA4D001C2797 /* rocket1.json in Resources */,
 				18167CE429910A590065A271 /* Main.storyboard in Resources */,
 				1885C68B2991411400C4A159 /* DetailVC.xib in Resources */,
 				18B4C8AD299BAB770002764A /* HomeCVC.xib in Resources */,
@@ -292,8 +302,10 @@
 				18167CE129910A590065A271 /* RewardsListVC.swift in Sources */,
 				1885C68129912CEC00C4A159 /* TableViewCell.swift in Sources */,
 				1885C68429913AF400C4A159 /* UIColorExtension.swift in Sources */,
+				18A26288299E43B80034551A /* Services.swift in Sources */,
 				18167CDD29910A590065A271 /* AppDelegate.swift in Sources */,
 				18B4C8A8299BAAC20002764A /* HomeScreenVC.swift in Sources */,
+				18A2628A299E4AA00034551A /* Rewards.swift in Sources */,
 				18B4C8AC299BAB770002764A /* HomeCVC.swift in Sources */,
 				18167CDF29910A590065A271 /* SceneDelegate.swift in Sources */,
 				1885C68A2991411400C4A159 /* DetailVC.swift in Sources */,

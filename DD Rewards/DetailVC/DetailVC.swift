@@ -9,6 +9,9 @@ import UIKit
 import Lottie
 class DetailVC: UIViewController {
     //private var animationView: LottieAnimationView?
+    var gameListTitle = ""
+    var gameListDate = ""
+    var gameListReward = ""
     
     @IBOutlet weak var animationView: LottieAnimationView!
     @IBOutlet weak var mainView: UIView!
@@ -45,23 +48,14 @@ class DetailVC: UIViewController {
         secondSection.layer.shadowOffset = CGSize(width: 0, height: 2)
         animationView.backgroundColor = UIColor.hexString(hex: "874BFF")
         animationView.layer.cornerRadius = 10
-        
+        sectionTitleText.text = gameListTitle
+        sectionDateText.text = gameListDate
         setupAnimationView()
     }
     func setupAnimationView () {
-        // 1. Set animation content mode
-          
           animationView.contentMode = .scaleAspectFit
-          
-          // 2. Set animation loop mode
-          
           animationView.loopMode = .loop
-          
-          // 3. Adjust animation speed
-          
-          animationView.animationSpeed = 0.5
-          
-          // 4. Play animation
+          animationView.animationSpeed = 0.7
           animationView.play()
     }
     
@@ -69,6 +63,11 @@ class DetailVC: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     @IBAction func shareBtnPressed(_ sender: UIButton) {
+        if let name = URL(string: gameListReward), !name.absoluteString.isEmpty {
+          let objectsToShare = [name]
+          let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+          self.present(activityVC, animated: true, completion: nil)
+        }
     }
     @IBAction func collectBtnPressed(_ sender: UIButton) {
     }

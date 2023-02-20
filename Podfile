@@ -8,4 +8,6 @@ target 'DD Rewards' do
   # Pods for DD Rewards
 	pod 'lottie-ios'
 	pod 'IQKeyboardManagerSwift'
+	pod 'Alamofire'
+	pod 'SDWebImage'
 end

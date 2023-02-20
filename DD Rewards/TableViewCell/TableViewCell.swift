@@ -8,7 +8,7 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var topDateLbl: UILabel!
     @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var TVCell: UIView!
@@ -31,12 +31,12 @@ class TableViewCell: UITableViewCell {
         cellView.layer.shadowOffset = CGSize(width: 0, height: 2)
         cellBackArrow.tintColor = UIColor.hexString(hex: "E2630B")
         //topDateLbl.text = ""
+        
+        
     }
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
 }

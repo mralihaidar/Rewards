@@ -105,13 +105,24 @@
                                                     <constraint firstAttribute="trailing" secondItem="OE0-cg-ma1" secondAttribute="trailing" id="aP8-YO-18P"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bY8-Wr-cIg" customClass="LottieAnimationView" customModule="Lottie">
+                                                <rect key="frame" x="165" y="-40" width="160" height="152"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="rocket1"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.69054321067312163" green="0.8263358987374767" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="bQI-4K-nIM" firstAttribute="leading" secondItem="nLI-TI-6Pf" secondAttribute="leading" id="0w8-ZY-OfP"/>
+                                            <constraint firstAttribute="bottom" secondItem="bY8-Wr-cIg" secondAttribute="bottom" constant="8" id="3za-xl-PBo"/>
                                             <constraint firstAttribute="bottom" secondItem="bQI-4K-nIM" secondAttribute="bottom" id="73b-Ih-WYH"/>
                                             <constraint firstAttribute="height" constant="120" id="9U0-cD-Lsi"/>
                                             <constraint firstItem="bQI-4K-nIM" firstAttribute="top" secondItem="nLI-TI-6Pf" secondAttribute="top" id="Ukt-Hn-V6X"/>
+                                            <constraint firstItem="bY8-Wr-cIg" firstAttribute="top" secondItem="bQI-4K-nIM" secondAttribute="top" constant="-40" id="VZm-gH-cBV"/>
+                                            <constraint firstAttribute="trailing" secondItem="bY8-Wr-cIg" secondAttribute="trailing" id="dDV-Ig-Peh"/>
+                                            <constraint firstItem="bY8-Wr-cIg" firstAttribute="leading" secondItem="nLI-TI-6Pf" secondAttribute="leading" constant="165" id="i1n-Xc-Nky"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xh2-pn-m6C">
@@ -157,6 +168,7 @@
                     <navigationItem key="navigationItem" id="5FY-G7-g5S"/>
                     <connections>
                         <outlet property="discLabel" destination="OE0-cg-ma1" id="Gnk-pg-hsm"/>
+                        <outlet property="homeAnimation" destination="bY8-Wr-cIg" id="NbU-Z7-LzG"/>
                         <outlet property="homeCollectionView" destination="O4J-vS-nMc" id="Elh-Od-89W"/>
                         <outlet property="homeMainView" destination="8dd-6c-Za5" id="vt7-uK-vs5"/>
                         <outlet property="homeTitleView" destination="nLI-TI-6Pf" id="Jna-yY-2PU"/>
@@ -270,6 +282,9 @@
             <point key="canvasLocation" x="6348" y="66.502463054187189"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="bY8-Wr-cIg"/>
+    </designables>
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <systemColor name="systemBackgroundColor">
