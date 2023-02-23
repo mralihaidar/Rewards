@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RewardsListVC" customModule="DD_Rewards" customModuleProvider="target">
+            <connections>
+                <outlet property="rewardBackButton" destination="CEz-29-X9n" id="p7G-Xd-tgc"/>
+                <outlet property="tableView" destination="ffT-vh-XlR" id="ZQ0-p3-yLF"/>
+                <outlet property="titleText" destination="4Ix-Iw-dhh" id="Rwx-M3-4Sx"/>
+                <outlet property="view" destination="OLO-Vb-Isy" id="MTx-nJ-NBw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="OLO-Vb-Isy">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ffT-vh-XlR">
+                    <rect key="frame" x="0.0" y="109" width="393" height="743"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEz-29-X9n">
+                    <rect key="frame" x="10.000000000000002" y="40" width="19.666666666666671" height="49"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="arrow.left" catalog="system"/>
+                    <connections>
+                        <action selector="backBtnPressed:" destination="-1" eventType="touchUpInside" id="l5D-OU-45O"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crazy Fox Rewards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ix-Iw-dhh">
+                    <rect key="frame" x="39.666666666666657" y="51" width="190" height="27"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="arf-0f-DJT"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ffT-vh-XlR" firstAttribute="top" secondItem="CEz-29-X9n" secondAttribute="bottom" constant="20" id="6zg-Ke-QAJ"/>
+                <constraint firstItem="arf-0f-DJT" firstAttribute="trailing" secondItem="ffT-vh-XlR" secondAttribute="trailing" id="7ne-yZ-mXK"/>
+                <constraint firstAttribute="bottom" secondItem="ffT-vh-XlR" secondAttribute="bottom" id="EOR-yP-UNt"/>
+                <constraint firstItem="arf-0f-DJT" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4Ix-Iw-dhh" secondAttribute="trailing" symbolic="YES" id="HF8-nU-KXO"/>
+                <constraint firstItem="4Ix-Iw-dhh" firstAttribute="leading" secondItem="CEz-29-X9n" secondAttribute="trailing" constant="10" id="Mft-Gz-xvP"/>
+                <constraint firstItem="CEz-29-X9n" firstAttribute="top" secondItem="OLO-Vb-Isy" secondAttribute="top" constant="40" id="QEF-n1-gE9"/>
+                <constraint firstItem="ffT-vh-XlR" firstAttribute="leading" secondItem="arf-0f-DJT" secondAttribute="leading" id="RaI-NW-lxn"/>
+                <constraint firstItem="CEz-29-X9n" firstAttribute="leading" secondItem="arf-0f-DJT" secondAttribute="leading" constant="10" id="fog-SL-9hM"/>
+                <constraint firstItem="4Ix-Iw-dhh" firstAttribute="centerY" secondItem="CEz-29-X9n" secondAttribute="centerY" id="hpk-CM-edq"/>
+                <constraint firstItem="4Ix-Iw-dhh" firstAttribute="leading" secondItem="CEz-29-X9n" secondAttribute="trailing" constant="10" id="jdd-XZ-dXB"/>
+                <constraint firstItem="ffT-vh-XlR" firstAttribute="top" secondItem="arf-0f-DJT" secondAttribute="top" constant="50" id="sv9-8W-3WB"/>
+            </constraints>
+            <point key="canvasLocation" x="-259" y="50"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="95"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

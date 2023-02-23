@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,13 +24,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="257" height="176"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homekit" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cMl-MR-UJ9">
-                                        <rect key="frame" x="93.5" y="9" width="70" height="79"/>
+                                        <rect key="frame" x="93.5" y="32" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="DjE-sn-wjn"/>
+                                            <constraint firstAttribute="height" constant="70" id="mKJ-CM-47U"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlS-p0-Wjz">
-                                        <rect key="frame" x="109.5" y="99" width="38.5" height="67"/>
+                                        <rect key="frame" x="109.5" y="113" width="38.5" height="53"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -37,21 +39,20 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="cMl-MR-UJ9" firstAttribute="height" secondItem="nJQ-df-VeE" secondAttribute="height" multiplier="0.45" id="EME-e4-Yto"/>
-                                    <constraint firstItem="cMl-MR-UJ9" firstAttribute="top" secondItem="nJQ-df-VeE" secondAttribute="top" constant="10" id="Lnq-sc-NZG"/>
-                                    <constraint firstItem="mlS-p0-Wjz" firstAttribute="centerX" secondItem="nJQ-df-VeE" secondAttribute="centerX" id="T6r-yl-IVS"/>
+                                    <constraint firstItem="cMl-MR-UJ9" firstAttribute="centerX" secondItem="nJQ-df-VeE" secondAttribute="centerX" id="6Qs-1E-OKq"/>
+                                    <constraint firstItem="mlS-p0-Wjz" firstAttribute="centerX" secondItem="nJQ-df-VeE" secondAttribute="centerX" id="Afl-5d-XcT"/>
+                                    <constraint firstItem="cMl-MR-UJ9" firstAttribute="centerY" secondItem="nJQ-df-VeE" secondAttribute="centerY" constant="-20" id="Lhu-Fh-89y"/>
                                     <constraint firstItem="mlS-p0-Wjz" firstAttribute="top" secondItem="cMl-MR-UJ9" secondAttribute="bottom" constant="10" id="We0-6g-QVQ"/>
                                     <constraint firstAttribute="bottom" secondItem="mlS-p0-Wjz" secondAttribute="bottom" constant="10" id="cEA-13-7TR"/>
-                                    <constraint firstItem="cMl-MR-UJ9" firstAttribute="centerX" secondItem="nJQ-df-VeE" secondAttribute="centerX" id="twy-GP-q2I"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="nJQ-df-VeE" firstAttribute="trailing" secondItem="ShS-db-Ohi" secondAttribute="trailingMargin" constant="8" id="DZv-cv-IjN"/>
-                            <constraint firstItem="nJQ-df-VeE" firstAttribute="top" secondItem="ShS-db-Ohi" secondAttribute="top" id="esx-wG-TOJ"/>
-                            <constraint firstItem="nJQ-df-VeE" firstAttribute="centerX" secondItem="ShS-db-Ohi" secondAttribute="centerX" id="gcB-AF-yX3"/>
-                            <constraint firstAttribute="bottom" secondItem="nJQ-df-VeE" secondAttribute="bottom" id="u9u-md-Ea1"/>
+                            <constraint firstAttribute="bottom" secondItem="nJQ-df-VeE" secondAttribute="bottom" id="0Y8-tN-Nod"/>
+                            <constraint firstItem="nJQ-df-VeE" firstAttribute="top" secondItem="ShS-db-Ohi" secondAttribute="top" id="HeI-Kl-VtD"/>
+                            <constraint firstItem="nJQ-df-VeE" firstAttribute="leading" secondItem="ShS-db-Ohi" secondAttribute="leading" id="LlD-gG-eTu"/>
+                            <constraint firstAttribute="trailing" secondItem="nJQ-df-VeE" secondAttribute="trailing" id="bpg-jx-OpV"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -72,7 +73,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="homekit" catalog="system" width="128" height="104"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

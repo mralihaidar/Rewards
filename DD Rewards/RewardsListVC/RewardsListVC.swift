@@ -8,8 +8,8 @@
 import UIKit
 
 class RewardsListVC: UIViewController {
-
-
+    
+    
     @IBOutlet weak var titleText: UILabel!
     @IBOutlet weak var rewardBackButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
@@ -23,6 +23,9 @@ class RewardsListVC: UIViewController {
         DecorateUI()
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
         self.navigationController?.isNavigationBarHidden = true
+        
+        
+        
         let service = service(baseURL:"https://livematchscore.app/Tech-Boost/get_user_rewards.php?")
         service.getAllData(endPoint: "page_no=1&no_of_records=30&game_name=MatchMasters&android_id=ad039cb8d594575f") { response, error in
             if error == nil, response?.status == 200 {
@@ -34,17 +37,27 @@ class RewardsListVC: UIViewController {
                 error?.localizedDescription
             }
         }
+        
+        
     }
+    
     func DecorateUI(){
         view.backgroundColor = UIColor.hexString(hex: "E2630B")
         rewardBackButton.tintColor = UIColor.white
         titleText.textColor = UIColor.white
     }
+    
+    
     @IBAction func backBtnPressed(_ sender: UIButton) {
-        navigationController?.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     
 }
+
+
+
+
+
 extension RewardsListVC: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

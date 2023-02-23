@@ -10,7 +10,6 @@
 		18167CDD29910A590065A271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18167CDC29910A590065A271 /* AppDelegate.swift */; };
 		18167CDF29910A590065A271 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18167CDE29910A590065A271 /* SceneDelegate.swift */; };
 		18167CE129910A590065A271 /* RewardsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18167CE029910A590065A271 /* RewardsListVC.swift */; };
-		18167CE429910A590065A271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18167CE229910A590065A271 /* Main.storyboard */; };
 		18167CE629910A5E0065A271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18167CE529910A5E0065A271 /* Assets.xcassets */; };
 		18167CE929910A5E0065A271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18167CE729910A5E0065A271 /* LaunchScreen.storyboard */; };
 		1885C68129912CEC00C4A159 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1885C67F29912CEC00C4A159 /* TableViewCell.swift */; };
@@ -32,6 +31,16 @@
 		18B4C8A8299BAAC20002764A /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4C8A7299BAAC20002764A /* HomeScreenVC.swift */; };
 		18B4C8AC299BAB770002764A /* HomeCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4C8AA299BAB770002764A /* HomeCVC.swift */; };
 		18B4C8AD299BAB770002764A /* HomeCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B4C8AB299BAB770002764A /* HomeCVC.xib */; };
+		1D66A42829A803EC00E7F6F5 /* RewardsListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D66A42729A803EC00E7F6F5 /* RewardsListVC.xib */; };
+		1D66A42D29A8090E00E7F6F5 /* CollectRewardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66A42B29A8090E00E7F6F5 /* CollectRewardVC.swift */; };
+		1D66A42E29A8090E00E7F6F5 /* CollectRewardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D66A42C29A8090E00E7F6F5 /* CollectRewardVC.xib */; };
+		1D66A43029A80E3E00E7F6F5 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66A42F29A80E3E00E7F6F5 /* UserDefaultsManager.swift */; };
+		1DA6F66529A7F90000433D45 /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA6F66329A7F90000433D45 /* WebViewVC.swift */; };
+		1DA6F66629A7F90000433D45 /* WebViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DA6F66429A7F90000433D45 /* WebViewVC.xib */; };
+		1DA6F66829A7FB7C00433D45 /* HomeScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DA6F66729A7FB7C00433D45 /* HomeScreenVC.xib */; };
+		1DA6F66A29A7FC1A00433D45 /* GamesListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DA6F66929A7FC1A00433D45 /* GamesListVC.xib */; };
+		1DA6F66C29A7FD7700433D45 /* OnBoardingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DA6F66B29A7FD7700433D45 /* OnBoardingVC.xib */; };
+		1DA6F66E29A7FD8600433D45 /* PrivacyPolicyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DA6F66D29A7FD8600433D45 /* PrivacyPolicyVC.xib */; };
 		51B88E7E549ACE1D8FB4A876 /* Pods_DD_Rewards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E230491A34F09C11954F8CF9 /* Pods_DD_Rewards.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +49,6 @@
 		18167CDC29910A590065A271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18167CDE29910A590065A271 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		18167CE029910A590065A271 /* RewardsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsListVC.swift; sourceTree = "<group>"; };
-		18167CE329910A590065A271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18167CE529910A5E0065A271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18167CE829910A5E0065A271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18167CEA29910A5E0065A271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +71,16 @@
 		18B4C8A7299BAAC20002764A /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
 		18B4C8AA299BAB770002764A /* HomeCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCVC.swift; sourceTree = "<group>"; };
 		18B4C8AB299BAB770002764A /* HomeCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCVC.xib; sourceTree = "<group>"; };
+		1D66A42729A803EC00E7F6F5 /* RewardsListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardsListVC.xib; sourceTree = "<group>"; };
+		1D66A42B29A8090E00E7F6F5 /* CollectRewardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectRewardVC.swift; sourceTree = "<group>"; };
+		1D66A42C29A8090E00E7F6F5 /* CollectRewardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectRewardVC.xib; sourceTree = "<group>"; };
+		1D66A42F29A80E3E00E7F6F5 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		1DA6F66329A7F90000433D45 /* WebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
+		1DA6F66429A7F90000433D45 /* WebViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewVC.xib; sourceTree = "<group>"; };
+		1DA6F66729A7FB7C00433D45 /* HomeScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenVC.xib; sourceTree = "<group>"; };
+		1DA6F66929A7FC1A00433D45 /* GamesListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesListVC.xib; sourceTree = "<group>"; };
+		1DA6F66B29A7FD7700433D45 /* OnBoardingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingVC.xib; sourceTree = "<group>"; };
+		1DA6F66D29A7FD8600433D45 /* PrivacyPolicyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrivacyPolicyVC.xib; sourceTree = "<group>"; };
 		7D640F2A5B997EF8347A6583 /* Pods-DD Rewards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DD Rewards.release.xcconfig"; path = "Target Support Files/Pods-DD Rewards/Pods-DD Rewards.release.xcconfig"; sourceTree = "<group>"; };
 		BCA7463454E38D697E5B5986 /* Pods-DD Rewards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DD Rewards.debug.xcconfig"; path = "Target Support Files/Pods-DD Rewards/Pods-DD Rewards.debug.xcconfig"; sourceTree = "<group>"; };
 		E230491A34F09C11954F8CF9 /* Pods_DD_Rewards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DD_Rewards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,15 +119,16 @@
 		18167CDB29910A590065A271 /* DD Rewards */ = {
 			isa = PBXGroup;
 			children = (
+				1D66A42A29A808DF00E7F6F5 /* CollectRewardVC */,
+				1D66A42929A808D400E7F6F5 /* RewardsListVC */,
 				18167CDC29910A590065A271 /* AppDelegate.swift */,
 				18167CDE29910A590065A271 /* SceneDelegate.swift */,
-				18167CE229910A590065A271 /* Main.storyboard */,
-				18167CE029910A590065A271 /* RewardsListVC.swift */,
 				18B4C8A9299BAB240002764A /* HomeScreenVC */,
 				1898F44629A7563C0056098E /* OnBoardingVC */,
 				189C2CD7299CEA4C00B79C3C /* GamesListVC */,
 				1885C6872991409E00C4A159 /* TableViewCell */,
 				1885C6862991408D00C4A159 /* DetailVC */,
+				1DA6F66229A7F8E000433D45 /* WebViewVC */,
 				18A26287299E43B80034551A /* Services.swift */,
 				18A26289299E4AA00034551A /* Rewards.swift */,
 				18167CE529910A5E0065A271 /* Assets.xcassets */,
@@ -118,6 +137,7 @@
 				18167CE729910A5E0065A271 /* LaunchScreen.storyboard */,
 				18167CEA29910A5E0065A271 /* Info.plist */,
 				1885C68529913AFA00C4A159 /* Fonts */,
+				1D66A42F29A80E3E00E7F6F5 /* UserDefaultsManager.swift */,
 			);
 			path = "DD Rewards";
 			sourceTree = "<group>";
@@ -155,6 +175,8 @@
 				1898F45729A7B0DD0056098E /* PrivacyPolicyVC.swift */,
 				1898F45329A785F80056098E /* OnBoardingCVC.swift */,
 				1898F45429A785F80056098E /* OnBoardingCVC.xib */,
+				1DA6F66B29A7FD7700433D45 /* OnBoardingVC.xib */,
+				1DA6F66D29A7FD8600433D45 /* PrivacyPolicyVC.xib */,
 			);
 			path = OnBoardingVC;
 			sourceTree = "<group>";
@@ -165,6 +187,7 @@
 				189C2CE0299CF52C00B79C3C /* GamesListVC.swift */,
 				189C2CE2299CF9E100B79C3C /* GamesCVC.swift */,
 				189C2CE3299CF9E100B79C3C /* GamesCVC.xib */,
+				1DA6F66929A7FC1A00433D45 /* GamesListVC.xib */,
 			);
 			path = GamesListVC;
 			sourceTree = "<group>";
@@ -172,11 +195,39 @@
 		18B4C8A9299BAB240002764A /* HomeScreenVC */ = {
 			isa = PBXGroup;
 			children = (
+				1DA6F66729A7FB7C00433D45 /* HomeScreenVC.xib */,
 				18B4C8A7299BAAC20002764A /* HomeScreenVC.swift */,
 				18B4C8AA299BAB770002764A /* HomeCVC.swift */,
 				18B4C8AB299BAB770002764A /* HomeCVC.xib */,
 			);
 			path = HomeScreenVC;
+			sourceTree = "<group>";
+		};
+		1D66A42929A808D400E7F6F5 /* RewardsListVC */ = {
+			isa = PBXGroup;
+			children = (
+				18167CE029910A590065A271 /* RewardsListVC.swift */,
+				1D66A42729A803EC00E7F6F5 /* RewardsListVC.xib */,
+			);
+			path = RewardsListVC;
+			sourceTree = "<group>";
+		};
+		1D66A42A29A808DF00E7F6F5 /* CollectRewardVC */ = {
+			isa = PBXGroup;
+			children = (
+				1D66A42B29A8090E00E7F6F5 /* CollectRewardVC.swift */,
+				1D66A42C29A8090E00E7F6F5 /* CollectRewardVC.xib */,
+			);
+			path = CollectRewardVC;
+			sourceTree = "<group>";
+		};
+		1DA6F66229A7F8E000433D45 /* WebViewVC */ = {
+			isa = PBXGroup;
+			children = (
+				1DA6F66329A7F90000433D45 /* WebViewVC.swift */,
+				1DA6F66429A7F90000433D45 /* WebViewVC.xib */,
+			);
+			path = WebViewVC;
 			sourceTree = "<group>";
 		};
 		2579326CB661463070DB45FC /* Pods */ = {
@@ -257,15 +308,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				18167CE929910A5E0065A271 /* LaunchScreen.storyboard in Resources */,
+				1DA6F66629A7F90000433D45 /* WebViewVC.xib in Resources */,
+				1DA6F66E29A7FD8600433D45 /* PrivacyPolicyVC.xib in Resources */,
 				1885C68229912CEC00C4A159 /* TableViewCell.xib in Resources */,
 				18167CE629910A5E0065A271 /* Assets.xcassets in Resources */,
 				1898F45629A785F80056098E /* OnBoardingCVC.xib in Resources */,
 				189C2CE7299D789700B79C3C /* coinicon.json in Resources */,
 				189C2CE5299CF9E100B79C3C /* GamesCVC.xib in Resources */,
+				1D66A42E29A8090E00E7F6F5 /* CollectRewardVC.xib in Resources */,
+				1DA6F66829A7FB7C00433D45 /* HomeScreenVC.xib in Resources */,
 				18AB5292299FAA4D001C2797 /* rocket1.json in Resources */,
-				18167CE429910A590065A271 /* Main.storyboard in Resources */,
+				1DA6F66C29A7FD7700433D45 /* OnBoardingVC.xib in Resources */,
+				1DA6F66A29A7FC1A00433D45 /* GamesListVC.xib in Resources */,
 				1885C68B2991411400C4A159 /* DetailVC.xib in Resources */,
 				18B4C8AD299BAB770002764A /* HomeCVC.xib in Resources */,
+				1D66A42829A803EC00E7F6F5 /* RewardsListVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				189C2CE4299CF9E100B79C3C /* GamesCVC.swift in Sources */,
+				1D66A42D29A8090E00E7F6F5 /* CollectRewardVC.swift in Sources */,
 				189C2CE1299CF52C00B79C3C /* GamesListVC.swift in Sources */,
 				18167CE129910A590065A271 /* RewardsListVC.swift in Sources */,
 				1898F45529A785F80056098E /* OnBoardingCVC.swift in Sources */,
@@ -330,6 +388,8 @@
 				18B4C8A8299BAAC20002764A /* HomeScreenVC.swift in Sources */,
 				18A2628A299E4AA00034551A /* Rewards.swift in Sources */,
 				18B4C8AC299BAB770002764A /* HomeCVC.swift in Sources */,
+				1DA6F66529A7F90000433D45 /* WebViewVC.swift in Sources */,
+				1D66A43029A80E3E00E7F6F5 /* UserDefaultsManager.swift in Sources */,
 				18167CDF29910A590065A271 /* SceneDelegate.swift in Sources */,
 				1898F44D29A757780056098E /* OnBoardingVC.swift in Sources */,
 				1885C68A2991411400C4A159 /* DetailVC.swift in Sources */,
@@ -339,14 +399,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		18167CE229910A590065A271 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18167CE329910A590065A271 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		18167CE729910A5E0065A271 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -484,10 +536,8 @@
 				INFOPLIST_FILE = "DD Rewards/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,10 +563,8 @@
 				INFOPLIST_FILE = "DD Rewards/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

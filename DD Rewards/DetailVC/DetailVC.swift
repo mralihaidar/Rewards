@@ -70,5 +70,26 @@ class DetailVC: UIViewController {
         }
     }
     @IBAction func collectBtnPressed(_ sender: UIButton) {
+        presentModal()
+        
+    }
+    
+    
+    func presentModal() {
+        let vc = CollectRewardVC(nibName: "CollectRewardVC", bundle: nil)
+//        let nav = UINavigationController(rootViewController: detailViewController)
+
+        vc.modalPresentationStyle = .pageSheet
+//        if #available(iOS 15.0, *) {
+//            if let sheet = vc.sheetPresentationController {
+//                
+//                sheet.detents = [.medium(), .large()]
+//                
+//            }
+//        } else {
+//            // Fallback on earlier versions
+//        }
+        present(vc, animated: true, completion: nil)
+
     }
 }

@@ -31,8 +31,8 @@ class PrivacyPolicyVC: UIViewController {
     }
     @IBAction func privacyPolicyAcceptBtnPressed(_ sender: UIButton) {
         if radioBtn.isSelected {
-            let controller = storyboard?.instantiateViewController(withIdentifier: "HomeScreenVC") as! HomeScreenVC
-            self.navigationController?.pushViewController(controller, animated: true)
+            let vc = HomeScreenVC(nibName: "HomeScreenVC", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
         }
         
     }
