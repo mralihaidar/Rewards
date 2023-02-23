@@ -10,4 +10,5 @@ target 'DD Rewards' do
 	pod 'IQKeyboardManagerSwift'
 	pod 'Alamofire'
 	pod 'SDWebImage'
+	pod 'DLRadioButton'
 end
