@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="A6l-ic-Bio">
-                        <rect key="frame" x="15" y="7.5" width="322" height="100"/>
+                        <rect key="frame" x="15" y="7.5" width="322" height="355"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22 Nov 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20h-sC-I8g">
                                 <rect key="frame" x="0.0" y="0.0" width="322" height="15"/>
@@ -78,6 +78,13 @@
                                     <constraint firstItem="gsE-dS-DSl" firstAttribute="leading" secondItem="fXT-6h-J0r" secondAttribute="leading" constant="15" id="kHs-hE-qgm"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQz-2w-08f">
+                                <rect key="frame" x="0.0" y="105" width="322" height="250"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="Een-9T-dGe"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <constraints>
                             <constraint firstItem="20h-sC-I8g" firstAttribute="top" secondItem="A6l-ic-Bio" secondAttribute="top" id="E2W-4L-umt"/>
@@ -100,6 +107,7 @@
                 <outlet property="cellImg" destination="gsE-dS-DSl" id="van-W2-SxE"/>
                 <outlet property="cellTitleLbl" destination="GgV-ZN-LbT" id="Mjq-me-hUn"/>
                 <outlet property="cellView" destination="fXT-6h-J0r" id="LnV-np-6nq"/>
+                <outlet property="nativeAdContainerView" destination="fQz-2w-08f" id="B7n-bi-X5D"/>
                 <outlet property="topDateLbl" destination="20h-sC-I8g" id="xuN-9a-sgP"/>
             </connections>
             <point key="canvasLocation" x="147.82608695652175" y="80.691964285714278"/>

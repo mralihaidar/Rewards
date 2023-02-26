@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AppLovinSDK
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,7 +14,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        
+                let settings = ALSdkSettings()
+//                settings.consentFlowSettings.isEnabled = true
+//                settings.consentFlowSettings.privacyPolicyURL = URL(string: "https://your_company_name.com/privacy_policy")
+//
+//                // Terms of Service URL is optional
+//                settings.consentFlowSettings.termsOfServiceURL = URL(string: "https://your_company_name.com/terms_of_service")
+            
+                let sdk = ALSdk.shared(with: settings)!
+                
+                // Please make sure to set the mediation provider value to "max" to ensure proper functionality
+                sdk.mediationProvider = "max"
+                sdk.initializeSdk { (configuration: ALSdkConfiguration) in
+                    
+                }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+//        ALSdk.shared()?.mediationProvider = "max"
+//
+//              ALSdk.shared()?.userIdentifier = UIDevice.current.identifierForVendor!.uuidString
+//
+//              ALSdk.shared()?.initializeSdk { (configuration: ALSdkConfiguration) in
+//                  ALPrivacySettings.setHasUserConsent(true)
+//              }
+//        ALSdk.shared()?.showMediationDebugger()
+
         return true
     }
 

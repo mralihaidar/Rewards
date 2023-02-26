@@ -4,13 +4,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewVC" customModule="DD_Rewards" customModuleProvider="target">
             <connections>
+                <outlet property="lblTitle" destination="pAK-De-srC" id="wPB-vQ-tJX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="webView" destination="Tgd-Xg-glj" id="IY2-Ta-giw"/>
             </connections>
@@ -21,28 +22,51 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tgd-Xg-glj">
-                    <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                    <rect key="frame" x="0.0" y="100.66666666666669" width="393" height="751.33333333333326"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <wkWebViewConfiguration key="configuration">
                         <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                         <wkPreferences key="preferences"/>
                     </wkWebViewConfiguration>
                 </wkWebView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrm-h7-q11">
+                    <rect key="frame" x="16" y="64" width="40" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="zvw-k4-3qM"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="arrow.left" catalog="system"/>
+                    <connections>
+                        <action selector="backTapped:" destination="-1" eventType="touchUpInside" id="xql-n9-oWQ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spin Master Rewards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAK-De-srC">
+                    <rect key="frame" x="65.999999999999986" y="61.666666666666657" width="210.66666666666663" height="27"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" name="themePrimaryColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Tgd-Xg-glj" secondAttribute="trailing" id="E4b-jw-Lst"/>
-                <constraint firstItem="Tgd-Xg-glj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="FLI-N0-JnG"/>
+                <constraint firstItem="xrm-h7-q11" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Ehy-10-xl2"/>
+                <constraint firstItem="xrm-h7-q11" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="F7i-7j-LSh"/>
                 <constraint firstItem="Tgd-Xg-glj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="LqU-vm-k0g"/>
+                <constraint firstItem="pAK-De-srC" firstAttribute="leading" secondItem="xrm-h7-q11" secondAttribute="trailing" constant="10" id="MYA-Da-NOC"/>
                 <constraint firstAttribute="bottom" secondItem="Tgd-Xg-glj" secondAttribute="bottom" id="dtD-yY-e0L"/>
+                <constraint firstItem="Tgd-Xg-glj" firstAttribute="top" secondItem="pAK-De-srC" secondAttribute="bottom" constant="12" id="lXv-p3-sT5"/>
+                <constraint firstItem="pAK-De-srC" firstAttribute="centerY" secondItem="xrm-h7-q11" secondAttribute="centerY" id="mb1-q4-nkb"/>
             </constraints>
             <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="arrow.left" catalog="system" width="128" height="95"/>
+        <namedColor name="themePrimaryColor">
+            <color red="0.88599997758865356" green="0.3880000114440918" blue="0.043000001460313797" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

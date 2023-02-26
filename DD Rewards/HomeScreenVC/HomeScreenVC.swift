@@ -9,13 +9,21 @@ import UIKit
 import MessageUI
 import StoreKit
 import Lottie
-class HomeScreenVC: UIViewController {
+import AppLovinSDK
+import MessageUI
+
+class HomeScreenVC: UIViewController, MFMailComposeViewControllerDelegate {
     
     
+    var   termsAndConditionURL = "https://appsomagic.blogspot.com/p/terms-and-conditions-for-coin-master.html"
+    var   privacyPolicyURL = "https://appsomagic.blogspot.com/p/privacy-policy-for-coin-master.html"
+    var   helpAndSupportURL = "https://mail.google.com/mail/?view=cm&to=appsomagic@gmail.com"
     
-    var   privacyPolicyURL = "https://appsomagic.blogspot.com/p/privacy-policy-for-match-masters.html"
-    var   helpAndSupportURL = "https://mail.google.com/mail/?view=cm&to=mrumair09@example.com"
+    var addView: MAAdView!
     
+    
+    @IBOutlet weak var adViewHeightCostraint: NSLayoutConstraint!
+    @IBOutlet weak var adView: UIView!
     @IBOutlet weak var homeAnimation: LottieAnimationView!
     @IBOutlet weak var homeCollectionView: UICollectionView!
     @IBOutlet weak var homeTitleView: UIView!
@@ -36,10 +44,22 @@ class HomeScreenVC: UIViewController {
         titleLabel.textColor = UIColor.black
         discLabel.textColor = UIColor.black
         setupAnimationView()
+        decorateUI()
+    }
+    
+    func decorateUI(){
+        
+        self.titleLabel.text = ProcessUtils.shared.titleName 
     }
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        createBannerAd()
+    }
+    
     func setupAnimationView () {
+//        homeAnimation = LottieAnimationView(name: "coin")
         homeAnimation.contentMode = .scaleAspectFit
         homeAnimation.loopMode = .loop
         homeAnimation.animationSpeed = 0.7
@@ -101,17 +121,23 @@ extension HomeScreenVC: UICollectionViewDataSource, UICollectionViewDelegate, UI
             
         } else if indexPath.item == 2 {
             
-//            guard let scene = view.window?.windowScene else {
-//                print("No Scene")
-//                return
-//            }
-//            SKStoreReviewController.requestReview(in: scene)
+            guard let scene = view.window?.windowScene else {
+                print("No Scene")
+                return
+            }
+            if #available(iOS 14.0, *) {
+                SKStoreReviewController.requestReview(in: scene)
+            } else {
+                // Fallback on earlier versions
+            }
             
         } else if indexPath.item == 3 {
             
-            let alert = UIAlertController(title: "Feedback", message: "Are You Enjoying the App?", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title:  "Dismiss ", style: .cancel, handler: nil))
-            
+            let name = "Hey! Spin Master Rewards,\nI just collected coin master free spin link from this spin master rewards app, even you can collect them with me!\nJoin the coin master daily rewards family by installing the Spin Master Rewards App & claim your FREE SPIN Now:"
+              let objectsToShare = [name]
+              let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+              self.present(activityVC, animated: true, completion: nil)
+
         } else if indexPath.item == 4 {
             
             
@@ -120,12 +146,67 @@ extension HomeScreenVC: UICollectionViewDataSource, UICollectionViewDelegate, UI
             self.navigationController?.pushViewController(vc, animated: true)
 
         } else if indexPath.item == 5 {
-            
-            let vc = WebViewVC(nibName: "WebViewVC", bundle: nil)
-            vc.webLink = self.helpAndSupportURL
-            self.navigationController?.pushViewController(vc, animated: true)
-            
+            self.sendEmail()
         }
         
     }
+    
+    func sendEmail() {
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self
+            mail.setToRecipients(["appsomagic@gmail.com"])
+//            mail.setMessageBody("<p>You're so awesome!</p>", isHTML: true)
+
+            present(mail, animated: true)
+        } else {
+            // show failure alert
+        }
+    }
+
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true)
+    }
+    
 }
+
+
+extension HomeScreenVC: MAAdViewAdDelegate {
+    
+    
+
+       func createBannerAd()
+       {
+           
+           addView = MAAdView(adUnitIdentifier: "YOUR_AD_UNIT_ID")
+           addView.delegate = self
+           addView.frame = CGRect(x: self.adView.frame.minX, y: self.adView.frame.minY, width: self.adView.frame.size.width, height: self.adView.frame.size.height)
+           view.addSubview(addView)
+       
+           // Load the first ad
+           addView.loadAd()
+       }
+
+       // MARK: MAAdDelegate Protocol
+
+       func didLoad(_ ad: MAAd) {}
+
+       func didFailToLoadAd(forAdUnitIdentifier adUnitIdentifier: String, withError error: MAError) {}
+
+       func didClick(_ ad: MAAd) {}
+
+       func didFail(toDisplay ad: MAAd, withError error: MAError) {}
+
+       
+       // MARK: MAAdViewAdDelegate Protocol
+
+       func didExpand(_ ad: MAAd) {}
+
+       func didCollapse(_ ad: MAAd) {}
+
+
+       // MARK: Deprecated Callbacks
+
+       func didDisplay(_ ad: MAAd) { /* use this for impression tracking */ }
+       func didHide(_ ad: MAAd) { /* DO NOT USE - THIS IS RESERVED FOR FULLSCREEN ADS ONLY AND WILL BE REMOVED IN A FUTURE SDK RELEASE */ }
+   }

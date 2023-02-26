@@ -16,18 +16,35 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         self.window = UIWindow(windowScene: windowScene)
-        
+
         var vc = UIViewController()
-        if (UserDefaults.standard.PrivacyPolicyAccept != nil ){
-            vc = HomeScreenVC(nibName: "HomeScreenVC", bundle: nil)
-            
-        }else{
-            UserDefaults.standard.setValue(1, forKey: "PrivacyPolicyAccept")
-            vc = OnBoardingVC(nibName: "OnBoardingVC", bundle: nil)
-        }
+        
+        vc = AnimatedSplashVC(nibName: "AnimatedSplashVC", bundle: nil)
         let rootNC = UINavigationController(rootViewController: vc)
         self.window?.rootViewController = rootNC
         self.window?.makeKeyAndVisible()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            self.window?.removeFromSuperview()
+            
+            if (UserDefaults.standard.PrivacyPolicyAccept != nil ){
+                vc = HomeScreenVC(nibName: "HomeScreenVC", bundle: nil)
+                
+            }else{
+                
+                vc = OnBoardingVC(nibName: "OnBoardingVC", bundle: nil)
+            }
+            let rootNC = UINavigationController(rootViewController: vc)
+            self.window?.rootViewController = rootNC
+            self.window?.makeKeyAndVisible()
+        }
+        
+        
+        
+        
+        
+        
+        
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {

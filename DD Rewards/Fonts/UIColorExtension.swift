@@ -10,6 +10,11 @@ import UIKit
 
 extension UIColor {
     
+    class var themeColor:UIColor{
+        return hexString(hex:"E2630B")
+    }
+    
+    
     class func hexString(hex:String) -> UIColor {
             var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
 

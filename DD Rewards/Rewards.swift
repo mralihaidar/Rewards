@@ -14,9 +14,18 @@ struct RewardsResponse: Codable {
 }
 
 struct Rewards: Codable {
-    let title: String?
-    let date: String?
-    let reward_url: String?
+    
+    let id : String?
+    let title : String?
+    let game_name : String?
+    let reward_url : String?
+    let is_redeem_code : String?
+    let is_game_link : String?
+    let date : String?
+    let time : String?
+    let views : String?
+    var is_opened : String?
+
 }
 
 struct gamesResponse: Codable {

@@ -11,4 +11,6 @@ target 'DD Rewards' do
 	pod 'Alamofire'
 	pod 'SDWebImage'
 	pod 'DLRadioButton'
+        pod 'AppLovinSDK'
+	pod 'PanModal'
 end
