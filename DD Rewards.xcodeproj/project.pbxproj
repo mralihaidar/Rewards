@@ -31,6 +31,8 @@
 		18B4C8A8299BAAC20002764A /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4C8A7299BAAC20002764A /* HomeScreenVC.swift */; };
 		18B4C8AC299BAB770002764A /* HomeCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4C8AA299BAB770002764A /* HomeCVC.swift */; };
 		18B4C8AD299BAB770002764A /* HomeCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B4C8AB299BAB770002764A /* HomeCVC.xib */; };
+		1D22039429AE070B007A9CB5 /* ConsentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D22039229AE070B007A9CB5 /* ConsentVC.swift */; };
+		1D22039529AE070B007A9CB5 /* ConsentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D22039329AE070B007A9CB5 /* ConsentVC.xib */; };
 		1D2D91A129AAB476008810DF /* ProcessUtill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2D91A029AAB476008810DF /* ProcessUtill.swift */; };
 		1D2D91A529AAB653008810DF /* AnimatedSplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2D91A329AAB653008810DF /* AnimatedSplashVC.swift */; };
 		1D2D91A629AAB653008810DF /* AnimatedSplashVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D2D91A429AAB653008810DF /* AnimatedSplashVC.xib */; };
@@ -52,7 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18167CD929910A590065A271 /* DD Rewards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DD Rewards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18167CD929910A590065A271 /* CM Rewards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CM Rewards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18167CDC29910A590065A271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18167CDE29910A590065A271 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		18167CE029910A590065A271 /* RewardsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsListVC.swift; sourceTree = "<group>"; };
@@ -78,6 +80,8 @@
 		18B4C8A7299BAAC20002764A /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
 		18B4C8AA299BAB770002764A /* HomeCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCVC.swift; sourceTree = "<group>"; };
 		18B4C8AB299BAB770002764A /* HomeCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCVC.xib; sourceTree = "<group>"; };
+		1D22039229AE070B007A9CB5 /* ConsentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentVC.swift; sourceTree = "<group>"; };
+		1D22039329AE070B007A9CB5 /* ConsentVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConsentVC.xib; sourceTree = "<group>"; };
 		1D2D91A029AAB476008810DF /* ProcessUtill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessUtill.swift; sourceTree = "<group>"; };
 		1D2D91A329AAB653008810DF /* AnimatedSplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSplashVC.swift; sourceTree = "<group>"; };
 		1D2D91A429AAB653008810DF /* AnimatedSplashVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimatedSplashVC.xib; sourceTree = "<group>"; };
@@ -125,7 +129,7 @@
 		18167CDA29910A590065A271 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				18167CD929910A590065A271 /* DD Rewards.app */,
+				18167CD929910A590065A271 /* CM Rewards.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +137,7 @@
 		18167CDB29910A590065A271 /* DD Rewards */ = {
 			isa = PBXGroup;
 			children = (
+				1D22039129AE06F4007A9CB5 /* ConsentVC */,
 				1D2D91A229AAB634008810DF /* AnimatedSplashVC */,
 				1DB827BD29A9E88A00EE1471 /* CuastomViews */,
 				1D66A42A29A808DF00E7F6F5 /* CollectRewardVC */,
@@ -222,6 +227,15 @@
 			path = HomeScreenVC;
 			sourceTree = "<group>";
 		};
+		1D22039129AE06F4007A9CB5 /* ConsentVC */ = {
+			isa = PBXGroup;
+			children = (
+				1D22039229AE070B007A9CB5 /* ConsentVC.swift */,
+				1D22039329AE070B007A9CB5 /* ConsentVC.xib */,
+			);
+			path = ConsentVC;
+			sourceTree = "<group>";
+		};
 		1D2D91A229AAB634008810DF /* AnimatedSplashVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,9 +301,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		18167CD829910A590065A271 /* DD Rewards */ = {
+		18167CD829910A590065A271 /* CM Rewards */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18167CED29910A5E0065A271 /* Build configuration list for PBXNativeTarget "DD Rewards" */;
+			buildConfigurationList = 18167CED29910A5E0065A271 /* Build configuration list for PBXNativeTarget "CM Rewards" */;
 			buildPhases = (
 				31C22EA82D3C8ACFBBDB753A /* [CP] Check Pods Manifest.lock */,
 				18167CD529910A590065A271 /* Sources */,
@@ -302,9 +316,9 @@
 			);
 			dependencies = (
 			);
-			name = "DD Rewards";
+			name = "CM Rewards";
 			productName = "DD Rewards";
-			productReference = 18167CD929910A590065A271 /* DD Rewards.app */;
+			productReference = 18167CD929910A590065A271 /* CM Rewards.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -335,7 +349,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				18167CD829910A590065A271 /* DD Rewards */,
+				18167CD829910A590065A271 /* CM Rewards */,
 			);
 		};
 /* End PBXProject section */
@@ -346,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D7C2A1E29AB978B00D6FD0D /* coin.json in Resources */,
+				1D22039529AE070B007A9CB5 /* ConsentVC.xib in Resources */,
 				18167CE929910A5E0065A271 /* LaunchScreen.storyboard in Resources */,
 				1DA6F66629A7F90000433D45 /* WebViewVC.xib in Resources */,
 				1DA6F66E29A7FD8600433D45 /* PrivacyPolicyVC.xib in Resources */,
@@ -442,6 +457,7 @@
 				1885C68429913AF400C4A159 /* UIColorExtension.swift in Sources */,
 				1898F45829A7B0DD0056098E /* PrivacyPolicyVC.swift in Sources */,
 				1D2D91A529AAB653008810DF /* AnimatedSplashVC.swift in Sources */,
+				1D22039429AE070B007A9CB5 /* ConsentVC.swift in Sources */,
 				18A26288299E43B80034551A /* Services.swift in Sources */,
 				18167CDD29910A590065A271 /* AppDelegate.swift in Sources */,
 				18B4C8A8299BAAC20002764A /* HomeScreenVC.swift in Sources */,
@@ -600,7 +616,7 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = J5MCF6VR6V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DD Rewards/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Spin Master Rewards";
+				INFOPLIST_KEY_CFBundleDisplayName = "CM Rewards";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This only uses device info for more interesting and relevant ads";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -635,7 +651,7 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = J5MCF6VR6V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DD Rewards/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Spin Master Rewards";
+				INFOPLIST_KEY_CFBundleDisplayName = "CM Rewards";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This only uses device info for more interesting and relevant ads";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -668,7 +684,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18167CED29910A5E0065A271 /* Build configuration list for PBXNativeTarget "DD Rewards" */ = {
+		18167CED29910A5E0065A271 /* Build configuration list for PBXNativeTarget "CM Rewards" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18167CEE29910A5E0065A271 /* Debug */,

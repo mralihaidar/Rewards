@@ -24,7 +24,15 @@ extension UserDefaults {
         }
     }
     
-    
+    var isConsentShow : String? {
+        get {
+            
+            return string(forKey: "isConsentShow")
+        }
+        set {
+            set(false, forKey: "isConsentShow")
+        }
+    }
     
 }
 

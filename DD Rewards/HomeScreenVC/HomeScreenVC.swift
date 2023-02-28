@@ -133,7 +133,8 @@ extension HomeScreenVC: UICollectionViewDataSource, UICollectionViewDelegate, UI
             
         } else if indexPath.item == 3 {
             
-            let name = "Hey! Spin Master Rewards,\nI just collected coin master free spin link from this spin master rewards app, even you can collect them with me!\nJoin the coin master daily rewards family by installing the Spin Master Rewards App & claim your FREE SPIN Now:"
+            let name = "Hey! Coin Master Fans,\n Are you out of spins and want more FREE spins then this is the right app for you!\nInstall the latest Coin Master Daily Rewards app and claim your daily FREE SPINS & COINS Now:- https://play.google.com/store/apps/details?id=com.mafiamasterfreespins.techboost"
+            
               let objectsToShare = [name]
               let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
               self.present(activityVC, animated: true, completion: nil)

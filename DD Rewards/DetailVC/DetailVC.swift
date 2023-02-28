@@ -95,29 +95,51 @@ class DetailVC: UIViewController {
     }
     
     @IBAction func shareBtnPressed(_ sender: UIButton) {
-        let name = "Hey! Spin Master Rewards,\n\nI just collected coin master free spin link from this spin master rewards app, even you can collect them with me!\nJoin the coin master daily rewards family by installing the Spin Master Rewards App & claim your FREE SPIN Now:"
+        
+        let name = "I got \(dataModel?.title ?? "") from this application, try Coin Master Daily Rewards App Now: https://play.google.com/store/apps/details?id=com.mafiamasterfreespins.techboost"
           let objectsToShare = [name]
           let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
           self.present(activityVC, animated: true, completion: nil)
         
     }
+    
     @IBAction func collectBtnPressed(_ sender: UIButton) {
+        
+        if ((UserDefaults.standard.isConsentShow != nil) == false ){
+            self.collectReward()
+        }else{
+            let vc  = ConsentVC(nibName: "ConsentVC", bundle: nil)
+            vc.secreenTitle = dataModel?.title
+            vc.callback = { (added) in
+                DispatchQueue.main.async {
+                    self.collectReward()
+                }
+            }
+            self.presentPanModal(vc)
+        }
+    }
+    
+    func collectReward(){
         if self.dataModel?.is_redeem_code == "1"{
             presentModal()
         }else{
-            
-            
             if let url = URL(string: self.dataModel?.reward_url ?? ""){
-                if UIApplication.shared.canOpenURL(url) {
-                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
-                    //If you want handle the completion block than
-                    UIApplication.shared.open(url, options: [:], completionHandler: { (success) in
-                        print("Open url : \(success)")
-                    })
+                if self.dataModel?.is_game_link == "1"{
+                    if let urlScheme = URL(string: "coinmater://"){
+                        if UIApplication.shared.canOpenURL(urlScheme) {
+                            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                        }else{
+                            let alert = UIAlertController(title: "Alert", message: "Please Install Coin Master app to collect reward", preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                                return
+                            }))
+                            self.present(alert, animated: true, completion: nil)
+                        }
+                    }
                 }else{
-                    let alert = UIAlertController(title: "Tip Message", message: "The way to open the given reward link is to jump on CM app. It will just take few minutes of your time. Make sure that you have installed the CM app on your phone to collect the rewards.", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title:  "Dismiss ", style: .cancel, handler: nil))
-                    self.present(alert, animated: true, completion: nil)
+                    if UIApplication.shared.canOpenURL(url) {
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    }
                 }
             }
         }
@@ -128,7 +150,6 @@ class DetailVC: UIViewController {
         vc.secreenTitle = gameTitle
         vc.code = redeemCode
         presentPanModal(vc)
-//        present(vc, animated: true, completion: nil)
 
     }
 }

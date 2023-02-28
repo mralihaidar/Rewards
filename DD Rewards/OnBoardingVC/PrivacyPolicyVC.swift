@@ -53,6 +53,10 @@ class PrivacyPolicyVC: UIViewController, UITextViewDelegate {
             UserDefaults.standard.setValue(1, forKey: "PrivacyPolicyAccept")
             let vc = HomeScreenVC(nibName: "HomeScreenVC", bundle: nil)
             self.navigationController?.pushViewController(vc, animated: true)
+        }else{
+            let alert = UIAlertController(title: "Alert", message: "You need to accept privacy policy", preferredStyle: .alert)
+                                alert.addAction(UIAlertAction(title:  "Dismiss ", style: .cancel, handler: nil))
+                                self.present(alert, animated: true, completion: nil)
         }
         
     }

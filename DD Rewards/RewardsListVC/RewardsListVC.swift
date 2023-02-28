@@ -46,7 +46,7 @@ class RewardsListVC: UIViewController {
         
         LoadingView.show()
         let service = service(baseURL:"https://livematchscore.app/Tech-Boost/get_user_rewards.php?")
-        service.getAllData(endPoint: "page_no=\(self.pageNum)&no_of_records=30&game_name=MatchMasters&android_id=ad039cb8d594575f") { response, error in
+        service.getAllData(endPoint: "page_no=\(self.pageNum)&no_of_records=30&game_name=CoinMaster&android_id=\(self.deviceID)") { response, error in
             LoadingView.hide()
             if error == nil, response?.status == 200 {
                 if (self.rewardList.count == 0 ){
@@ -67,17 +67,8 @@ class RewardsListVC: UIViewController {
         
     }
     
-    func updateRewards(id : String, data: Rewards){
+    func updateRewards( data: Rewards){
         
-        if data.is_opened != "1" {
-            
-            let param =  [ "android_id" : self.deviceID, "platform" : "ios", "reward_id" : id ] as [String : Any]
-            LoadingView.show()
-            let service = service(baseURL:"http://softekapps.xyz/x1-rewards/update_reward_views.php")
-            service.postRequestWithURL(UrlPath: "http://softekapps.xyz/x1-rewards/update_reward_views.php",params: param) { response, error in
-                LoadingView.hide()
-            }
-        }
         let vc = DetailVC(nibName: "DetailVC", bundle: nil)
         vc.setContent(dataModel: data)
         self.navigationController?.pushViewController(vc, animated: true)
@@ -139,12 +130,41 @@ extension RewardsListVC: UITableViewDataSource, UITableViewDelegate{
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if interstitialAd.isReady
-//        {
-//            interstitialAd.show()
-//        }
-        self.updateRewards(id :rewardList[indexPath.row].id ?? "", data: rewardList[indexPath.row] )
-        rewardList[indexPath.row].is_opened = "1";
+        
+        if rewardList[indexPath.row].is_opened != "1" {
+            let alert = UIAlertController(title: "Alert", message: "You are about to see interstitial ads. Which is also known as full screen ads", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "No Thanks", style: .default, handler: { action in
+                return
+            }))
+            
+            alert.addAction(UIAlertAction(title: "Watch Ad", style: .default, handler: { action in
+                
+                    if self.interstitialAd.isReady
+                    {
+                        self.interstitialAd.show()
+                    }
+                    if self.rewardList[indexPath.row].is_opened != "1" {
+                        
+                        let param =  [ "android_id" : self.deviceID, "platform" : "ios", "reward_id" : self.rewardList[indexPath.row].id ?? "" ] as [String : Any]
+                        LoadingView.show()
+                        let service = service(baseURL:"https://livematchscore.app/Tech-Boost/update_reward_views.php")
+                        service.postRequestWithURL(UrlPath: "https://livematchscore.app/Tech-Boost/update_reward_views.php",params: param) { response, error in
+                            LoadingView.hide()
+                        }
+                        self.rewardList[indexPath.row].is_opened = "1";
+                    }
+                    
+                    self.updateRewards(data: self.rewardList[indexPath.row] )
+            }))
+            
+            self.present(alert, animated: true, completion: nil)
+        }else{
+            
+            self.updateRewards(data: self.rewardList[indexPath.row] )
+        }
+        
+        
+    
     }
     
     

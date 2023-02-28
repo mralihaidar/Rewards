@@ -7,9 +7,9 @@
 	<key>AppLovinConsentFlowInfo</key>
 	<dict/>
 	<key>AppLovinConsentFlowPrivacyPolicy</key>
-	<string>https://appsomagic.blogspot.com/p/privacy-policy-for-match-masters.html</string>
+	<string>https://appsomagic.blogspot.com/p/privacy-policy-for-coin-masters.html</string>
 	<key>AppLovinConsentFlowTermsOfService</key>
-	<string>https://mail.google.com/mail/?view=cm&amp;to=mrumair09@example.com</string>
+	<string>https://appsomagic.blogspot.com/p/terms-and-conditions-for-coin-master.html</string>
 	<key>AppLovinSdkKey</key>
 	<string>_KBVkpXWZ-XzKQVbJqoFyORlqNAnFaiMWvuv1EDOe2_TLoutM7iTt83mN3BdTnaXm9ybeTZBipqcP7SrXAJCdg</string>
 	<key>LSApplicationQueriesSchemes</key>
