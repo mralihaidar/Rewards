@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrivacyPolicyVC" customModule="DD_Rewards" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrivacyPolicyVC" customModule="CM_Rewards" customModuleProvider="target">
             <connections>
                 <outlet property="privacyPolicyAcceptBtn" destination="LnH-Nc-MZC" id="lvE-nO-F5r"/>
                 <outlet property="privacyPolicyCenterImage" destination="RY7-AX-gIG" id="Jer-Hi-wwl"/>
@@ -25,7 +25,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D16-xg-J9c">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spin Master Rewards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgU-rW-ywr">
                             <rect key="frame" x="85.5" y="100" width="243" height="32"/>
@@ -41,7 +41,7 @@
                             </constraints>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnH-Nc-MZC">
-                            <rect key="frame" x="30" y="743" width="354" height="55"/>
+                            <rect key="frame" x="30" y="739" width="354" height="55"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="55" id="63e-Hk-cK2"/>
                             </constraints>
@@ -57,10 +57,10 @@
                             </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XuD-90-nH0">
-                            <rect key="frame" x="30" y="654" width="354" height="59"/>
+                            <rect key="frame" x="30" y="666" width="360" height="43"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpj-t4-9oU" customClass="DLRadioButton">
-                                    <rect key="frame" x="0.0" y="14" width="35" height="35"/>
+                                    <rect key="frame" x="0.0" y="4" width="35" height="35"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="35" id="H5Y-Tw-nA9"/>
@@ -88,10 +88,9 @@
                                         <action selector="radioButtonPressed:" destination="-1" eventType="touchUpInside" id="I4H-OU-uc0"/>
                                     </connections>
                                 </button>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q4w-Dd-mZM">
-                                    <rect key="frame" x="35" y="5" width="314" height="49"/>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="text here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q4w-Dd-mZM">
+                                    <rect key="frame" x="35" y="5" width="325" height="33"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
                                     <color key="textColor" systemColor="labelColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -100,13 +99,12 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="q4w-Dd-mZM" firstAttribute="centerY" secondItem="XuD-90-nH0" secondAttribute="centerY" id="0Ld-fN-2Ex"/>
+                                <constraint firstItem="zpj-t4-9oU" firstAttribute="centerY" secondItem="XuD-90-nH0" secondAttribute="centerY" id="0pr-Fr-m7H"/>
                                 <constraint firstAttribute="bottom" secondItem="q4w-Dd-mZM" secondAttribute="bottom" constant="5" id="89c-4z-HB1"/>
                                 <constraint firstItem="zpj-t4-9oU" firstAttribute="leading" secondItem="XuD-90-nH0" secondAttribute="leading" id="PNP-dt-dgF"/>
                                 <constraint firstItem="q4w-Dd-mZM" firstAttribute="top" secondItem="XuD-90-nH0" secondAttribute="top" constant="5" id="gUE-BU-pMJ"/>
                                 <constraint firstItem="q4w-Dd-mZM" firstAttribute="leading" secondItem="zpj-t4-9oU" secondAttribute="trailing" id="lhb-4Q-X6e"/>
-                                <constraint firstAttribute="trailing" secondItem="q4w-Dd-mZM" secondAttribute="trailing" constant="5" id="x0B-tr-C3C"/>
-                                <constraint firstItem="zpj-t4-9oU" firstAttribute="top" secondItem="XuD-90-nH0" secondAttribute="top" constant="14" id="xCz-Dm-ZH8"/>
-                                <constraint firstAttribute="bottom" secondItem="zpj-t4-9oU" secondAttribute="bottom" constant="10" id="y1D-G1-Jw3"/>
+                                <constraint firstAttribute="trailing" secondItem="q4w-Dd-mZM" secondAttribute="trailing" id="x0B-tr-C3C"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -122,7 +120,7 @@
                         <constraint firstItem="pgU-rW-ywr" firstAttribute="top" secondItem="D16-xg-J9c" secondAttribute="top" constant="100" id="qYq-9J-wqu"/>
                         <constraint firstAttribute="bottom" secondItem="LnH-Nc-MZC" secondAttribute="bottom" constant="20" id="syh-36-bg9"/>
                         <constraint firstAttribute="trailing" secondItem="LnH-Nc-MZC" secondAttribute="trailing" constant="30" id="tda-9m-LGR"/>
-                        <constraint firstAttribute="trailing" secondItem="XuD-90-nH0" secondAttribute="trailing" constant="30" id="vtb-G2-DQg"/>
+                        <constraint firstAttribute="trailing" secondItem="XuD-90-nH0" secondAttribute="trailing" constant="24" id="vtb-G2-DQg"/>
                     </constraints>
                 </view>
             </subviews>
@@ -138,10 +136,10 @@
         </view>
     </objects>
     <resources>
-        <image name="arrow.right.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="arrow.right.circle.fill" catalog="system" width="128" height="123"/>
         <image name="iconApp" width="108" height="108"/>
         <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

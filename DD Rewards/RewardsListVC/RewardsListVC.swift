@@ -35,6 +35,12 @@ class RewardsListVC: UIViewController {
         createInterstitialAd()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.tableView.reloadData()
+    }
+    
     func DecorateUI(){
         view.backgroundColor = UIColor.themeColor
         rewardBackButton.tintColor = UIColor.white
@@ -95,8 +101,17 @@ extension RewardsListVC: UITableViewDataSource, UITableViewDelegate{
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
         cell.cellTitleLbl.text = rewardList[indexPath.row].title
-        cell.cellDateLbl.text = rewardList[indexPath.row].date
-        cell.topDateLbl.text = rewardList[indexPath.row].date
+        
+        let dateFormate = DateFormatManager.shared.formatDateStrToStr(date: rewardList[indexPath.row].date ?? "", oldFormat: "dd-MM-yy", newFormat: "dd MMM yyyy")
+        if (rewardList[indexPath.row].date != nil) {
+            cell.cellDateLbl.text = dateFormate
+            cell.topDateLbl.text = dateFormate
+        }else{
+            
+            cell.cellDateLbl.text = ""
+            cell.topDateLbl.text = ""
+        }
+        
         
         if (rewardList[indexPath.row].is_opened == "1"){
             cell.cellBackArrow.tintColor = UIColor.lightGray
@@ -113,7 +128,7 @@ extension RewardsListVC: UITableViewDataSource, UITableViewDelegate{
             }
         }
         
-        if indexPath.row == 1 {
+        if indexPath.row == 0 {
             cell.createNativeAd()
             cell.nativeAdContainerView.isHidden = false
         }else{
@@ -132,6 +147,7 @@ extension RewardsListVC: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if rewardList[indexPath.row].is_opened != "1" {
+            
             let alert = UIAlertController(title: "Alert", message: "You are about to see interstitial ads. Which is also known as full screen ads", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "No Thanks", style: .default, handler: { action in
                 return
@@ -159,11 +175,24 @@ extension RewardsListVC: UITableViewDataSource, UITableViewDelegate{
             
             self.present(alert, animated: true, completion: nil)
         }else{
+            let alert = UIAlertController(title: "Alert", message: "You are about to see interstitial ads. Which is also known as full screen ads", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "No Thanks", style: .default, handler: { action in
+                return
+            }))
             
-            self.updateRewards(data: self.rewardList[indexPath.row] )
+            alert.addAction(UIAlertAction(title: "Watch Ad", style: .default, handler: { action in
+                
+                    if self.interstitialAd.isReady
+                    {
+                        self.interstitialAd.show()
+                    }
+                    
+                    
+                    self.updateRewards(data: self.rewardList[indexPath.row] )
+            }))
+            
+            self.present(alert, animated: true, completion: nil)
         }
-        
-        
     
     }
     

@@ -64,7 +64,8 @@ class DetailVC: UIViewController {
         animationView.backgroundColor = UIColor.hexString(hex: "874BFF")
         animationView.layer.cornerRadius = 10
         sectionTitleText.text = gameListTitle
-        sectionDateText.text = gameListDate
+        let dateFormated = DateFormatManager.shared.formatDateStrToStr(date: gameListDate , oldFormat: "dd-mm-yy", newFormat: "dd MMM yyyy")
+        sectionDateText.text = dateFormated
         setupAnimationView()
         createNativeAd()
         titleText.text = "Collect Your Daily Reward"
@@ -105,7 +106,7 @@ class DetailVC: UIViewController {
     
     @IBAction func collectBtnPressed(_ sender: UIButton) {
         
-        if ((UserDefaults.standard.isConsentShow != nil) == false ){
+        if (UserDefaults.standard.isConsentShow == "1" ){
             self.collectReward()
         }else{
             let vc  = ConsentVC(nibName: "ConsentVC", bundle: nil)
@@ -125,7 +126,7 @@ class DetailVC: UIViewController {
         }else{
             if let url = URL(string: self.dataModel?.reward_url ?? ""){
                 if self.dataModel?.is_game_link == "1"{
-                    if let urlScheme = URL(string: "coinmater://"){
+                    if let urlScheme = URL(string: "coinmaster://"){
                         if UIApplication.shared.canOpenURL(urlScheme) {
                             UIApplication.shared.open(url, options: [:], completionHandler: nil)
                         }else{

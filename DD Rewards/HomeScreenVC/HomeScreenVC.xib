@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeScreenVC" customModule="DD_Rewards" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeScreenVC" customModule="CM_Rewards" customModuleProvider="target">
             <connections>
                 <outlet property="adView" destination="js6-pt-2QT" id="iWZ-sN-uby"/>
                 <outlet property="adViewHeightCostraint" destination="1Ts-ye-5o9" id="Lrr-Dk-EQR"/>
@@ -32,20 +32,20 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVR-rv-23V">
-                            <rect key="frame" x="25" y="69" width="364" height="120"/>
+                            <rect key="frame" x="25" y="73" width="364" height="105"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IK4-ir-cZJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="150" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="105"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Match Master Rewards" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NG9-kg-8YJ">
-                                            <rect key="frame" x="10" y="10" width="140" height="45.5"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                            <rect key="frame" x="10" y="10" width="140" height="43"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collect Your Daily Rewards" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbF-xt-BYa">
-                                            <rect key="frame" x="10" y="78.5" width="140" height="31.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <rect key="frame" x="10" y="66" width="140" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -61,7 +61,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahp-0Q-E7V" customClass="LottieAnimationView" customModule="Lottie">
-                                    <rect key="frame" x="165" y="-40" width="199" height="160"/>
+                                    <rect key="frame" x="165" y="-30" width="199" height="135"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="coin"/>
@@ -74,19 +74,19 @@
                                 <constraint firstItem="ahp-0Q-E7V" firstAttribute="leading" secondItem="hVR-rv-23V" secondAttribute="leading" constant="165" id="EHA-bN-8rZ"/>
                                 <constraint firstAttribute="bottom" secondItem="IK4-ir-cZJ" secondAttribute="bottom" id="KP5-Y1-wjF"/>
                                 <constraint firstAttribute="trailing" secondItem="ahp-0Q-E7V" secondAttribute="trailing" id="Qf6-hE-pjk"/>
-                                <constraint firstAttribute="height" constant="120" id="RLS-Wp-qRx"/>
+                                <constraint firstAttribute="height" constant="105" id="RLS-Wp-qRx"/>
                                 <constraint firstItem="IK4-ir-cZJ" firstAttribute="leading" secondItem="hVR-rv-23V" secondAttribute="leading" id="SOk-fA-fto"/>
-                                <constraint firstItem="ahp-0Q-E7V" firstAttribute="top" secondItem="IK4-ir-cZJ" secondAttribute="top" constant="-40" id="qZO-ss-vZ7"/>
+                                <constraint firstItem="ahp-0Q-E7V" firstAttribute="top" secondItem="IK4-ir-cZJ" secondAttribute="top" constant="-30" id="qZO-ss-vZ7"/>
                                 <constraint firstItem="IK4-ir-cZJ" firstAttribute="top" secondItem="hVR-rv-23V" secondAttribute="top" id="yFO-gr-6M9"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fi-Zu-Lqe">
-                            <rect key="frame" x="25" y="249" width="364" height="563"/>
+                            <rect key="frame" x="25" y="238" width="364" height="574"/>
                             <subviews>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3GJ-Zd-Nws">
-                                    <rect key="frame" x="0.0" y="0.0" width="364" height="563"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="364" height="574"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KE0-Zk-Yqk">
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="10" id="KE0-Zk-Yqk">
                                         <size key="itemSize" width="128" height="128"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>

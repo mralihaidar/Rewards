@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 import PanModal
 
 class ConsentVC: UIViewController , PanModalPresentable{
@@ -22,25 +21,33 @@ class ConsentVC: UIViewController , PanModalPresentable{
     @IBOutlet weak var btnconsent: UIButton!
     @IBOutlet weak var lblDesc: UITextView!
     
+    @IBOutlet weak var acceptView: UIView!
     @IBOutlet weak var btnAccept: UIButton!
     
+    @IBOutlet weak var rejectView: UIView!
     @IBOutlet weak var btnReject: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.lblTitle.text = secreenTitle ?? ""
         self.headerView.backgroundColor = UIColor.themeColor
-        lblDesc.text = "I got \(self.secreenTitle ?? "") from this application, try Mafiaa Master Daily Rewards App Now: https://play.google.com/store/apps/details?id=com.mafiamasterfreespins.techboost"
+        lblDesc.text = "The \(self.secreenTitle ?? "")  URL will be opened outside the app. Do you agree that you want to leave the application and open the given URL outside the app now?"
         
+        btnconsent.setImage(UIImage(systemName: "circle") , for: .normal)
         
-        btnconsent .setImage(UIImage(named: "circle") , for: .normal)
+        btnAccept.layer.cornerRadius = btnAccept.frame.size.height/2
+        btnAccept.backgroundColor = UIColor.themeColor
+        btnReject.backgroundColor = UIColor.lightGray
+        btnReject.layer.cornerRadius = btnReject.frame.size.height/2
+        
+//        btnconsent.setImage(UIImage(named: "circle") , for: .normal)
     }
     
     
     
     @IBAction func acceptTapped(_ sender: Any) {
         if isShow{
-            UserDefaults.standard.setValue(false, forKey: "isConsentShow")
+            UserDefaults.standard.setValue("0", forKey: "isConsentShow")
         }
         
         if let cb = callback {
@@ -61,10 +68,10 @@ class ConsentVC: UIViewController , PanModalPresentable{
     
         if (isShow){
             isShow = false
-            btnconsent .setImage(UIImage(named: "circle") , for: .normal)
+            btnconsent .setImage(UIImage(systemName: "circle") , for: .normal)
         }else{
             isShow = true
-            btnconsent .setImage(UIImage(named: "checkmark.circle.fill"), for: .normal)
+            btnconsent .setImage(UIImage(systemName: "checkmark.circle.fill"), for: .normal)
         }
         
         
@@ -82,10 +89,10 @@ class ConsentVC: UIViewController , PanModalPresentable{
     
     
     var shortFormHeight: PanModalHeight {
-        return .contentHeight(400)
+        return .contentHeight(380)
     }
 
     var longFormHeight: PanModalHeight {
-        return .maxHeightWithTopInset(400)
+        return .maxHeightWithTopInset(380)
     }
 }

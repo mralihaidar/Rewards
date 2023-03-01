@@ -76,7 +76,7 @@ extension GamesListVC: UICollectionViewDataSource, UICollectionViewDelegate, UIC
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let collWidth = collectionView.frame.size.width - 100
         let cellWidth = collWidth/4
-        return CGSize(width: cellWidth, height: 120)
+        return CGSize(width: cellWidth, height: cellWidth + 35)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 15

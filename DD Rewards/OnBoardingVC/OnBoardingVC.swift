@@ -14,12 +14,14 @@ class OnBoardingVC: UIViewController {
             onBoardingPageControl.currentPage = currentPage
             if currentPage == 0 {
                 self.onBoardingBackBtn.setTitle("", for: .normal)
-                
+                self.onBoardingBackBtn.isHidden = true
             } else if currentPage == 2 {
                 self.onBoardingNextBtn.setTitle("Finish", for: .normal)
+                self.onBoardingBackBtn.isHidden = false
             } else {
                 self.onBoardingBackBtn.setTitle("Back", for: .normal)
                 self.onBoardingNextBtn.setTitle("Next", for: .normal)
+                self.onBoardingBackBtn.isHidden = false
             }
         }
     }
@@ -40,6 +42,7 @@ class OnBoardingVC: UIViewController {
         onBoardingCollection.backgroundColor = UIColor.hexString(hex: "f7f8f5")
         onBoardingCollection.reloadData()
         self.view.backgroundColor = UIColor.hexString(hex: "f7f8f5")
+        
     }
     
     

@@ -94,7 +94,7 @@ extension HomeScreenVC: UICollectionViewDataSource, UICollectionViewDelegate, UI
         
         let cellWidth = (collectionView.frame.size.width - 80) / 2
         
-        let cellHeight =  (collectionView.frame.size.height - 100) / 3
+        let cellHeight =  (collectionView.frame.size.height - 150) / 3
          
         return CGSize(width: cellWidth + 35, height: cellHeight)
     }

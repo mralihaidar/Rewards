@@ -13,7 +13,7 @@ class PrivacyPolicyVC: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var radioBtn: DLRadioButton!
     @IBOutlet weak var privacyPolicyAcceptBtn: UIButton!
-    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var textView: UILabel!
     @IBOutlet weak var privacyPolicyCheckImage: UIImageView!
     @IBOutlet weak var privacyPolicyCenterImage: UIImageView!
     override func viewDidLoad() {

@@ -30,7 +30,7 @@ extension UserDefaults {
             return string(forKey: "isConsentShow")
         }
         set {
-            set(false, forKey: "isConsentShow")
+            set("1", forKey: "isConsentShow")
         }
     }
     

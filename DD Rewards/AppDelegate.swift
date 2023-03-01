@@ -10,11 +10,12 @@ import AppLovinSDK
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        window?.overrideUserInterfaceStyle = .light
         
                 let settings = ALSdkSettings()
 //                settings.consentFlowSettings.isEnabled = true

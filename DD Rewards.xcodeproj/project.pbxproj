@@ -50,6 +50,7 @@
 		1DA6F66E29A7FD8600433D45 /* PrivacyPolicyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DA6F66D29A7FD8600433D45 /* PrivacyPolicyVC.xib */; };
 		1DB827BF29A9E89E00EE1471 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB827BE29A9E89E00EE1471 /* LoadingView.swift */; };
 		1DB827C129A9E8FF00EE1471 /* UIView+Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB827C029A9E8FF00EE1471 /* UIView+Extension .swift */; };
+		1DCB1DB129AF3BE200B29CE1 /* DateFormatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCB1DB029AF3BE200B29CE1 /* DateFormatManager.swift */; };
 		51B88E7E549ACE1D8FB4A876 /* Pods_DD_Rewards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E230491A34F09C11954F8CF9 /* Pods_DD_Rewards.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +100,7 @@
 		1DA6F66D29A7FD8600433D45 /* PrivacyPolicyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrivacyPolicyVC.xib; sourceTree = "<group>"; };
 		1DB827BE29A9E89E00EE1471 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		1DB827C029A9E8FF00EE1471 /* UIView+Extension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension .swift"; sourceTree = "<group>"; };
+		1DCB1DB029AF3BE200B29CE1 /* DateFormatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatManager.swift; sourceTree = "<group>"; };
 		7D640F2A5B997EF8347A6583 /* Pods-DD Rewards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DD Rewards.release.xcconfig"; path = "Target Support Files/Pods-DD Rewards/Pods-DD Rewards.release.xcconfig"; sourceTree = "<group>"; };
 		BCA7463454E38D697E5B5986 /* Pods-DD Rewards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DD Rewards.debug.xcconfig"; path = "Target Support Files/Pods-DD Rewards/Pods-DD Rewards.debug.xcconfig"; sourceTree = "<group>"; };
 		E230491A34F09C11954F8CF9 /* Pods_DD_Rewards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DD_Rewards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +164,7 @@
 				1D7C2A1C29AB978A00D6FD0D /* coin.json */,
 				1D7C2A1D29AB978B00D6FD0D /* giftbox.json */,
 				1D2D91A029AAB476008810DF /* ProcessUtill.swift */,
+				1DCB1DB029AF3BE200B29CE1 /* DateFormatManager.swift */,
 			);
 			path = "DD Rewards";
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				1898F45829A7B0DD0056098E /* PrivacyPolicyVC.swift in Sources */,
 				1D2D91A529AAB653008810DF /* AnimatedSplashVC.swift in Sources */,
 				1D22039429AE070B007A9CB5 /* ConsentVC.swift in Sources */,
+				1DCB1DB129AF3BE200B29CE1 /* DateFormatManager.swift in Sources */,
 				18A26288299E43B80034551A /* Services.swift in Sources */,
 				18167CDD29910A590065A271 /* AppDelegate.swift in Sources */,
 				18B4C8A8299BAAC20002764A /* HomeScreenVC.swift in Sources */,
