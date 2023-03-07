@@ -61,8 +61,12 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahp-0Q-E7V" customClass="LottieAnimationView" customModule="Lottie">
-                                    <rect key="frame" x="165" y="-30" width="199" height="135"/>
+                                    <rect key="frame" x="214" y="-45" width="150" height="150"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="150" id="GKe-Du-l4U"/>
+                                        <constraint firstAttribute="height" constant="150" id="PLl-Ml-k1c"/>
+                                    </constraints>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="coin"/>
                                     </userDefinedRuntimeAttributes>
@@ -71,12 +75,10 @@
                             <color key="backgroundColor" red="0.69054321070000002" green="0.82633589870000002" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="ahp-0Q-E7V" secondAttribute="bottom" id="9PJ-6t-HtZ"/>
-                                <constraint firstItem="ahp-0Q-E7V" firstAttribute="leading" secondItem="hVR-rv-23V" secondAttribute="leading" constant="165" id="EHA-bN-8rZ"/>
                                 <constraint firstAttribute="bottom" secondItem="IK4-ir-cZJ" secondAttribute="bottom" id="KP5-Y1-wjF"/>
                                 <constraint firstAttribute="trailing" secondItem="ahp-0Q-E7V" secondAttribute="trailing" id="Qf6-hE-pjk"/>
                                 <constraint firstAttribute="height" constant="105" id="RLS-Wp-qRx"/>
                                 <constraint firstItem="IK4-ir-cZJ" firstAttribute="leading" secondItem="hVR-rv-23V" secondAttribute="leading" id="SOk-fA-fto"/>
-                                <constraint firstItem="ahp-0Q-E7V" firstAttribute="top" secondItem="IK4-ir-cZJ" secondAttribute="top" constant="-30" id="qZO-ss-vZ7"/>
                                 <constraint firstItem="IK4-ir-cZJ" firstAttribute="top" secondItem="hVR-rv-23V" secondAttribute="top" id="yFO-gr-6M9"/>
                             </constraints>
                         </view>

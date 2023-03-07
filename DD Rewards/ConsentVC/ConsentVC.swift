@@ -61,9 +61,9 @@ class ConsentVC: UIViewController , PanModalPresentable{
     }
     
     @IBAction func rejectTapped(_ sender: Any) {
-        if let cb = callback {
-            cb(false)
-        }
+//        if let cb = callback {
+//            cb(false)
+//        }
         self.dismiss(animated: true)
     }
     

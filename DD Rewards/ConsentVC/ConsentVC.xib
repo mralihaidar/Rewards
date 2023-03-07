@@ -58,10 +58,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3f-L9-6ee">
-                    <rect key="frame" x="32" y="217.33333333333334" width="25" height="22"/>
+                    <rect key="frame" x="32" y="219.33333333333334" width="40" height="22"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="25" id="Ywf-b3-3i5"/>
-                        <constraint firstAttribute="height" constant="25" id="jNP-In-YgY"/>
+                        <constraint firstAttribute="width" constant="40" id="Ywf-b3-3i5"/>
+                        <constraint firstAttribute="height" constant="40" id="jNP-In-YgY"/>
                     </constraints>
                     <color key="tintColor" name="themePrimaryColor"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -149,13 +149,13 @@
                 <constraint firstItem="AO5-PO-p3w" firstAttribute="top" secondItem="WI4-EQ-Djy" secondAttribute="bottom" constant="24" id="CDQ-8Z-c4H"/>
                 <constraint firstItem="aGP-7Z-neO" firstAttribute="top" secondItem="8iv-tA-ivS" secondAttribute="top" id="J4g-Lk-KJ1"/>
                 <constraint firstItem="38D-Li-K5C" firstAttribute="top" secondItem="aGP-7Z-neO" secondAttribute="bottom" constant="24" id="NaJ-G4-I6l"/>
-                <constraint firstItem="AO5-PO-p3w" firstAttribute="leading" secondItem="g3f-L9-6ee" secondAttribute="trailing" constant="10" id="Q2a-Yn-cae"/>
+                <constraint firstItem="AO5-PO-p3w" firstAttribute="leading" secondItem="g3f-L9-6ee" secondAttribute="trailing" constant="-5" id="Q2a-Yn-cae"/>
                 <constraint firstItem="Cp4-O3-e9N" firstAttribute="trailing" secondItem="38D-Li-K5C" secondAttribute="trailing" constant="16" id="U3j-Sk-zir"/>
                 <constraint firstItem="WI4-EQ-Djy" firstAttribute="leading" secondItem="Cp4-O3-e9N" secondAttribute="leading" constant="16" id="UGJ-e3-Bd2"/>
                 <constraint firstItem="g3f-L9-6ee" firstAttribute="leading" secondItem="Cp4-O3-e9N" secondAttribute="leading" constant="32" id="UOU-Ji-uHR"/>
                 <constraint firstItem="Cp4-O3-e9N" firstAttribute="trailing" secondItem="WI4-EQ-Djy" secondAttribute="trailing" constant="16" id="Vl6-es-83A"/>
                 <constraint firstItem="Cp4-O3-e9N" firstAttribute="trailing" secondItem="aGP-7Z-neO" secondAttribute="trailing" id="WGu-Pe-dFN"/>
-                <constraint firstItem="g3f-L9-6ee" firstAttribute="top" secondItem="AO5-PO-p3w" secondAttribute="top" constant="-4" id="bde-VV-WeF"/>
+                <constraint firstItem="g3f-L9-6ee" firstAttribute="top" secondItem="AO5-PO-p3w" secondAttribute="top" constant="-2" id="bde-VV-WeF"/>
                 <constraint firstItem="AVX-Id-mtq" firstAttribute="top" secondItem="AO5-PO-p3w" secondAttribute="bottom" constant="32" id="cgh-kp-dgT"/>
                 <constraint firstItem="aGP-7Z-neO" firstAttribute="leading" secondItem="Cp4-O3-e9N" secondAttribute="leading" id="cjB-VS-mjO"/>
                 <constraint firstItem="g3f-L9-6ee" firstAttribute="baseline" secondItem="AO5-PO-p3w" secondAttribute="baseline" id="n8u-94-58L"/>

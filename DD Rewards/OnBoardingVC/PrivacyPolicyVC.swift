@@ -27,7 +27,7 @@ class PrivacyPolicyVC: UIViewController, UITextViewDelegate {
         privacyPolicyAcceptBtn.layer.cornerRadius = 10
     
         let attributedString = NSMutableAttributedString(string: "I have read the privacy terms carefully and agree to the Privacy Policy")
-                attributedString.addAttribute(.link, value: "https://techboostapps.blogspot.com/p/terms-and-conditions-for-coin-master.html", range: NSRange(location: 57, length: 14))
+                attributedString.addAttribute(.link, value: "https://techboostapps.blogspot.com/p/privacy-policy-for-coin-master.html", range: NSRange(location: 57, length: 14))
         textView.attributedText = attributedString
         textView.font = .systemFont(ofSize: 16)
 
@@ -55,7 +55,7 @@ class PrivacyPolicyVC: UIViewController, UITextViewDelegate {
             self.navigationController?.pushViewController(vc, animated: true)
         }else{
             let alert = UIAlertController(title: "Alert", message: "You need to accept privacy policy", preferredStyle: .alert)
-                                alert.addAction(UIAlertAction(title:  "Dismiss ", style: .cancel, handler: nil))
+                                alert.addAction(UIAlertAction(title:  "Ok", style: .cancel, handler: nil))
                                 self.present(alert, animated: true, completion: nil)
         }
         
