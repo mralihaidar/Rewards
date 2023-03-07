@@ -18,7 +18,8 @@ class GamesListVC: UIViewController {
     var nativeAdLoader: MANativeAdLoader?
      var nativeAd: MAAd?
      var nativeAdView: UIView?
-     
+    @IBOutlet weak var nativeAdviewHeightConstraint: NSLayoutConstraint!
+    
     
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var gamesTitleText: UILabel!
@@ -53,7 +54,13 @@ class GamesListVC: UIViewController {
             }
         }
         gamesTitleText.text = "Spin Master Rewards"
-        createNativeAd()
+        if(ProcessUtils.shared.IsAddShow == true){
+            self.createNativeAd()
+            
+        }else{
+            self.nativeAdviewHeightConstraint.constant = 10
+        }
+        
         
         
     }

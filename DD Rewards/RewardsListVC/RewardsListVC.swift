@@ -31,8 +31,9 @@ class RewardsListVC: UIViewController {
         
         
         getRewards()
-        
-        createInterstitialAd()
+        if (ProcessUtils.shared.IsAddShow == true){
+            createInterstitialAd()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -127,10 +128,13 @@ extension RewardsListVC: UITableViewDataSource, UITableViewDelegate{
                 cell.topDateLbl.text = rewardList[indexPath.row].date
             }
         }
-        
-        if indexPath.row == 0 {
-            cell.createNativeAd()
-            cell.nativeAdContainerView.isHidden = false
+        if (ProcessUtils.shared.IsAddShow == true){
+            if indexPath.row == 0 {
+                cell.createNativeAd()
+                cell.nativeAdContainerView.isHidden = false
+            }else{
+                cell.nativeAdContainerView.isHidden = true
+            }
         }else{
             cell.nativeAdContainerView.isHidden = true
         }
@@ -146,19 +150,40 @@ extension RewardsListVC: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if rewardList[indexPath.row].is_opened != "1" {
-            
-            let alert = UIAlertController(title: "Alert", message: "You are about to see interstitial ads. Which is also known as full screen ads", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "No Thanks", style: .default, handler: { action in
-                return
-            }))
-            
-            alert.addAction(UIAlertAction(title: "Watch Ad", style: .default, handler: { action in
-                
-                    if self.interstitialAd.isReady
-                    {
-                        self.interstitialAd.show()
+        
+        if (ProcessUtils.shared.IsAddShow == false){
+            if rewardList[indexPath.row].is_opened != "1" {
+                if self.rewardList[indexPath.row].is_opened != "1" {
+                    
+                    let param =  [ "android_id" : self.deviceID, "platform" : "ios", "reward_id" : self.rewardList[indexPath.row].id ?? "" ] as [String : Any]
+                    LoadingView.show()
+                    let service = service(baseURL:"https://livematchscore.app/Tech-Boost/update_reward_views.php")
+                    service.postRequestWithURL(UrlPath: "https://livematchscore.app/Tech-Boost/update_reward_views.php",params: param) { response, error in
+                        LoadingView.hide()
                     }
+                    self.rewardList[indexPath.row].is_opened = "1";
+                }
+                
+                self.updateRewards(data: self.rewardList[indexPath.row] )
+            }else{
+                self.updateRewards(data: self.rewardList[indexPath.row] )
+            }
+                
+        }else{
+            if rewardList[indexPath.row].is_opened != "1" {
+                
+                let alert = UIAlertController(title: "Alert", message: "You are about to see interstitial ads. Which is also known as full screen ads", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "No Thanks", style: .default, handler: { action in
+                    return
+                }))
+                
+                alert.addAction(UIAlertAction(title: "Watch Ad", style: .default, handler: { action in
+                    
+                        if self.interstitialAd.isReady
+                        {
+                            self.interstitialAd.show()
+                        }
+                    
                     if self.rewardList[indexPath.row].is_opened != "1" {
                         
                         let param =  [ "android_id" : self.deviceID, "platform" : "ios", "reward_id" : self.rewardList[indexPath.row].id ?? "" ] as [String : Any]
@@ -171,29 +196,31 @@ extension RewardsListVC: UITableViewDataSource, UITableViewDelegate{
                     }
                     
                     self.updateRewards(data: self.rewardList[indexPath.row] )
-            }))
-            
-            self.present(alert, animated: true, completion: nil)
-        }else{
-            let alert = UIAlertController(title: "Alert", message: "You are about to see interstitial ads. Which is also known as full screen ads", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "No Thanks", style: .default, handler: { action in
-                return
-            }))
-            
-            alert.addAction(UIAlertAction(title: "Watch Ad", style: .default, handler: { action in
+                }))
                 
-                    if self.interstitialAd.isReady
-                    {
-                        self.interstitialAd.show()
+                self.present(alert, animated: true, completion: nil)
+                
+            }else{
+                
+                let alert = UIAlertController(title: "Alert", message: "You are about to see interstitial ads. Which is also known as full screen ads", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "No Thanks", style: .default, handler: { action in
+                    return
+                }))
+                
+                alert.addAction(UIAlertAction(title: "Watch Ad", style: .default, handler: { action in
+                    if (ProcessUtils.shared.IsAddShow == true){
+                        if self.interstitialAd.isReady
+                        {
+                            self.interstitialAd.show()
+                        }
                     }
                     
-                    
                     self.updateRewards(data: self.rewardList[indexPath.row] )
-            }))
-            
-            self.present(alert, animated: true, completion: nil)
+                }))
+                
+                self.present(alert, animated: true, completion: nil)
+            }
         }
-    
     }
     
     

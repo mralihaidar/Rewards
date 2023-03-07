@@ -17,6 +17,7 @@
                 <outlet property="animationView" destination="imJ-uF-c0i" id="hfb-yp-rqg"/>
                 <outlet property="backButton" destination="iTu-gW-Uvz" id="Nhr-5b-yY9"/>
                 <outlet property="collectBtn" destination="1zu-Ec-2Z7" id="bsG-Wp-kOQ"/>
+                <outlet property="lblAdvertisement" destination="Xdm-Wx-8UJ" id="ecT-x5-RLE"/>
                 <outlet property="mainView" destination="nax-XX-aVG" id="M6o-kF-esG"/>
                 <outlet property="secondSection" destination="044-oV-5ae" id="FHM-AT-jRk"/>
                 <outlet property="sectionDateText" destination="Drq-fw-tMO" id="xNL-sz-7sE"/>
@@ -175,8 +176,8 @@
                                                 <constraint firstAttribute="bottom" secondItem="zkD-xW-O1h" secondAttribute="bottom" constant="5" id="ybS-AY-jmX"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adversitment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdm-Wx-8UJ">
-                                            <rect key="frame" x="138.33333333333331" y="432" width="151.33333333333331" height="28.666666666666686"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advertisement" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdm-Wx-8UJ">
+                                            <rect key="frame" x="131.33333333333337" y="432" width="165.66666666666663" height="28.666666666666686"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -245,7 +246,7 @@
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="95"/>
         <image name="arrow.right" catalog="system" width="128" height="95"/>
-        <image name="shareicon" width="30" height="30"/>
+        <image name="shareicon" width="24" height="24"/>
         <namedColor name="themePrimaryColor">
             <color red="0.88599997758865356" green="0.3880000114440918" blue="0.043000001460313797" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

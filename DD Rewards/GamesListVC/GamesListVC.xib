@@ -9,13 +9,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GamesListVC" customModule="DD_Rewards" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GamesListVC" customModule="CM_Rewards" customModuleProvider="target">
             <connections>
                 <outlet property="backBtn" destination="vnQ-8e-zDf" id="nd9-Ey-Mbv"/>
                 <outlet property="gameCollectionView" destination="69v-0S-DOT" id="7iB-Dv-Ggp"/>
                 <outlet property="gamesBottomView" destination="Mkb-Q1-JIL" id="Le0-l2-gtF"/>
                 <outlet property="gamesTitleText" destination="AVH-8K-HfC" id="GOX-0Y-1Tl"/>
                 <outlet property="nativeAdContainerView" destination="Km4-8F-Pfd" id="tdZ-eK-DbC"/>
+                <outlet property="nativeAdviewHeightConstraint" destination="NQk-LU-zaB" id="Rv7-yd-146"/>
                 <outlet property="view" destination="u90-2W-ZdF" id="4Td-lZ-lO0"/>
             </connections>
         </placeholder>

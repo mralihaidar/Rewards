@@ -2,14 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIUserInterfaceStyle</key>
+	<string>light</string>
 	<key>AppLovinConsentFlowEnabled</key>
 	<true/>
 	<key>AppLovinConsentFlowInfo</key>
 	<dict/>
 	<key>AppLovinConsentFlowPrivacyPolicy</key>
-	<string>https://appsomagic.blogspot.com/p/privacy-policy-for-coin-master.html</string>
+	<string>https://techboostapps.blogspot.com/p/privacy-policy-for-coin-master.html</string>
 	<key>AppLovinConsentFlowTermsOfService</key>
-	<string>https://appsomagic.blogspot.com/p/terms-and-conditions-for-coin-master.html</string>
+	<string>https://techboostapps.blogspot.com/p/terms-and-conditions-for-coin-master.html</string>
 	<key>AppLovinSdkKey</key>
 	<string>_KBVkpXWZ-XzKQVbJqoFyORlqNAnFaiMWvuv1EDOe2_TLoutM7iTt83mN3BdTnaXm9ybeTZBipqcP7SrXAJCdg</string>
 	<key>LSApplicationQueriesSchemes</key>

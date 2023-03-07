@@ -27,7 +27,7 @@ class PrivacyPolicyVC: UIViewController, UITextViewDelegate {
         privacyPolicyAcceptBtn.layer.cornerRadius = 10
     
         let attributedString = NSMutableAttributedString(string: "I have read the privacy terms carefully and agree to the Privacy Policy")
-                attributedString.addAttribute(.link, value: "https://appsomagic.blogspot.com/p/privacy-policy-for-coin-master.html", range: NSRange(location: 57, length: 14))
+                attributedString.addAttribute(.link, value: "https://techboostapps.blogspot.com/p/terms-and-conditions-for-coin-master.html", range: NSRange(location: 57, length: 14))
         textView.attributedText = attributedString
         textView.font = .systemFont(ofSize: 16)
 

@@ -38,6 +38,7 @@ class DetailVC: UIViewController {
     @IBOutlet weak var titleText: UILabel!
     @IBOutlet weak var backButton: UIButton!
     
+    @IBOutlet weak var lblAdvertisement: UILabel!
     @IBOutlet weak var adView: UIView!
     
     
@@ -67,7 +68,13 @@ class DetailVC: UIViewController {
         let dateFormated = DateFormatManager.shared.formatDateStrToStr(date: gameListDate , oldFormat: "dd-mm-yy", newFormat: "dd MMM yyyy")
         sectionDateText.text = dateFormated
         setupAnimationView()
-        createNativeAd()
+        if(ProcessUtils.shared.IsAddShow == true){
+            createNativeAd()
+            self.lblAdvertisement.isHidden = false
+        }else{
+            self.lblAdvertisement.isHidden = true
+        }
+        
         titleText.text = "Collect Your Daily Reward"
     }
     

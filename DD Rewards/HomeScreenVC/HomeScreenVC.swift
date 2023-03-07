@@ -14,9 +14,8 @@ import MessageUI
 
 class HomeScreenVC: UIViewController, MFMailComposeViewControllerDelegate {
     
-    
-    var   termsAndConditionURL = "https://appsomagic.blogspot.com/p/terms-and-conditions-for-coin-master.html"
-    var   privacyPolicyURL = "https://appsomagic.blogspot.com/p/privacy-policy-for-coin-master.html"
+    var   termsAndConditionURL = "https://techboostapps.blogspot.com/p/terms-and-conditions-for-coin-master.html"
+    var   privacyPolicyURL = "https://techboostapps.blogspot.com/p/privacy-policy-for-coin-master.html"
     var   helpAndSupportURL = "https://mail.google.com/mail/?view=cm&to=appsomagic@gmail.com"
     
     var addView: MAAdView!
@@ -55,7 +54,9 @@ class HomeScreenVC: UIViewController, MFMailComposeViewControllerDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        createBannerAd()
+        if (ProcessUtils.shared.IsAddShow == true){
+            createBannerAd()
+        }
     }
     
     func setupAnimationView () {

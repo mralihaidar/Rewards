@@ -19,6 +19,9 @@ class ProcessUtils {
     }
     
     var titleName = "Spin Master Rewards"
-    var supportEmail = "appsomagic@gmail.com"
+    var supportEmail = "techboostappz@gmail.com"
+    
+    
+    var IsAddShow = false
     
 }

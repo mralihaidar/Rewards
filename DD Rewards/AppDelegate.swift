@@ -17,20 +17,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.overrideUserInterfaceStyle = .light
         
-                let settings = ALSdkSettings()
+        
+        if (ProcessUtils.shared.IsAddShow == true){
+            let settings = ALSdkSettings()
 //                settings.consentFlowSettings.isEnabled = true
 //                settings.consentFlowSettings.privacyPolicyURL = URL(string: "https://your_company_name.com/privacy_policy")
 //
 //                // Terms of Service URL is optional
 //                settings.consentFlowSettings.termsOfServiceURL = URL(string: "https://your_company_name.com/terms_of_service")
+        
+            let sdk = ALSdk.shared(with: settings)!
             
-                let sdk = ALSdk.shared(with: settings)!
+            // Please make sure to set the mediation provider value to "max" to ensure proper functionality
+            sdk.mediationProvider = "max"
+            sdk.initializeSdk { (configuration: ALSdkConfiguration) in
                 
-                // Please make sure to set the mediation provider value to "max" to ensure proper functionality
-                sdk.mediationProvider = "max"
-                sdk.initializeSdk { (configuration: ALSdkConfiguration) in
-                    
-                }
+            }
+        }
+                
         
         
         
