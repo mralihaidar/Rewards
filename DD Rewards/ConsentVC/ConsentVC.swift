@@ -35,11 +35,14 @@ class ConsentVC: UIViewController , PanModalPresentable{
         
         btnconsent.setImage(UIImage(systemName: "circle") , for: .normal)
         
-        btnAccept.layer.cornerRadius = btnAccept.frame.size.height/2
+//        btnAccept.layer.cornerRadius = btnAccept.frame.size.height/2
         btnAccept.backgroundColor = UIColor.themeColor
         btnReject.backgroundColor = UIColor.lightGray
-        btnReject.layer.cornerRadius = btnReject.frame.size.height/2
-        
+//        btnReject.layer.cornerRadius = btnReject.frame.size.height/2
+        acceptView.layer.cornerRadius = acceptView.frame.size.height/2
+        rejectView.layer.cornerRadius = rejectView.frame.size.height/2
+        acceptView.backgroundColor = UIColor.themeColor
+        rejectView.backgroundColor = UIColor.lightGray
 //        btnconsent.setImage(UIImage(named: "circle") , for: .normal)
     }
     
