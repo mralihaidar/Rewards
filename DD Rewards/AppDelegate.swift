@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.overrideUserInterfaceStyle = .light
         
+    
         
         if (ProcessUtils.shared.IsAddShow == true){
             let settings = ALSdkSettings()
@@ -35,9 +36,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
                 
+        if (UserDefaults.standard.deviceID == nil || UserDefaults.standard.deviceID == ""){
+            
+            let dateTime = DateFormatManager.shared.formatDate(date: Date())
+            let device = "\(UIDevice.current.identifierForVendor!.uuidString)"
+            UserDefaults.standard.setValue("\(device)\(dateTime)", forKey: "deviceID")
+            
+        }
         
-        
-        
+        ProcessUtils.shared.deviceId = UserDefaults.standard.deviceID
         
         
         

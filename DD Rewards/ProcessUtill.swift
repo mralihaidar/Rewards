@@ -17,7 +17,7 @@ class ProcessUtils {
     private init() {
         
     }
-    
+    var deviceId : String!
     var titleName = "Spin Master Rewards"
     var supportEmail = "techboostappz@gmail.com"
     

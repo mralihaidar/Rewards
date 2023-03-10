@@ -10,7 +10,7 @@ import AppLovinSDK
 
 class RewardsListVC: UIViewController {
     
-    let deviceID = UIDevice.current.identifierForVendor!.uuidString
+    let deviceID = "\(ProcessUtils.shared.deviceId ?? UIDevice.current.identifierForVendor!.uuidString)"
     var pageNum = 1
     var interstitialAd: MAInterstitialAd!
     var retryAttempt = 0.0

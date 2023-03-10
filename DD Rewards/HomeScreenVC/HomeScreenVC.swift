@@ -16,7 +16,7 @@ class HomeScreenVC: UIViewController, MFMailComposeViewControllerDelegate {
     
     var   termsAndConditionURL = "https://techboostapps.blogspot.com/p/terms-and-conditions-for-coin-master.html"
     var   privacyPolicyURL = "https://techboostapps.blogspot.com/p/privacy-policy-for-coin-master.html"
-    var   helpAndSupportURL = "https://mail.google.com/mail/?view=cm&to=appsomagic@gmail.com"
+//    var   helpAndSupportURL = "https://mail.google.com/mail/?view=cm&to=techboostappz@gmail.com"
     
     var addView: MAAdView!
     
@@ -157,7 +157,7 @@ extension HomeScreenVC: UICollectionViewDataSource, UICollectionViewDelegate, UI
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
-            mail.setToRecipients(["appsomagic@gmail.com"])
+            mail.setToRecipients(["techboostappz@gmail.com"])
 //            mail.setMessageBody("<p>You're so awesome!</p>", isHTML: true)
 
             present(mail, animated: true)

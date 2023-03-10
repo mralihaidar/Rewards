@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 
@@ -13,6 +14,16 @@ import Foundation
 
 
 extension UserDefaults {
+    
+    var deviceID : String? {
+        get {
+            
+            return string(forKey: "deviceID")
+        }
+        set {
+            set("\(UIDevice.current.identifierForVendor!.uuidString)", forKey: "deviceID")
+        }
+}
     
     var PrivacyPolicyAccept : String? {
         get {
