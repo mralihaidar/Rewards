@@ -83,10 +83,10 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fi-Zu-Lqe">
-                            <rect key="frame" x="25" y="238" width="364" height="574"/>
+                            <rect key="frame" x="25" y="202" width="364" height="610"/>
                             <subviews>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3GJ-Zd-Nws">
-                                    <rect key="frame" x="0.0" y="0.0" width="364" height="574"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="364" height="610"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="10" id="KE0-Zk-Yqk">
                                         <size key="itemSize" width="128" height="128"/>
@@ -120,7 +120,7 @@
                         <constraint firstItem="6fi-Zu-Lqe" firstAttribute="leading" secondItem="Xnq-Zq-6zg" secondAttribute="leading" constant="25" id="9HD-os-0kw"/>
                         <constraint firstItem="js6-pt-2QT" firstAttribute="top" secondItem="6fi-Zu-Lqe" secondAttribute="bottom" id="FBc-IO-YdC"/>
                         <constraint firstItem="Xnq-Zq-6zg" firstAttribute="bottom" secondItem="js6-pt-2QT" secondAttribute="bottom" id="KB2-ys-M0C"/>
-                        <constraint firstItem="6fi-Zu-Lqe" firstAttribute="top" secondItem="hVR-rv-23V" secondAttribute="bottom" constant="60" id="L6t-5a-HW3"/>
+                        <constraint firstItem="6fi-Zu-Lqe" firstAttribute="top" secondItem="hVR-rv-23V" secondAttribute="bottom" constant="24" id="L6t-5a-HW3"/>
                         <constraint firstItem="js6-pt-2QT" firstAttribute="leading" secondItem="Xnq-Zq-6zg" secondAttribute="leading" id="S0v-7x-2dX"/>
                         <constraint firstItem="Xnq-Zq-6zg" firstAttribute="trailing" secondItem="js6-pt-2QT" secondAttribute="trailing" id="Zar-XQ-GiT"/>
                         <constraint firstItem="hVR-rv-23V" firstAttribute="top" secondItem="Xnq-Zq-6zg" secondAttribute="top" constant="25" id="gRd-Op-ylB"/>

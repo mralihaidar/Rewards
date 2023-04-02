@@ -36,10 +36,21 @@
 		1D2D91A129AAB476008810DF /* ProcessUtill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2D91A029AAB476008810DF /* ProcessUtill.swift */; };
 		1D2D91A529AAB653008810DF /* AnimatedSplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2D91A329AAB653008810DF /* AnimatedSplashVC.swift */; };
 		1D2D91A629AAB653008810DF /* AnimatedSplashVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D2D91A429AAB653008810DF /* AnimatedSplashVC.xib */; };
+		1D2E7C9C29D85F180012030E /* TipTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2E7C9A29D85F180012030E /* TipTVC.swift */; };
+		1D2E7C9D29D85F180012030E /* TipTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D2E7C9B29D85F180012030E /* TipTVC.xib */; };
+		1D2E7CA229D866A90012030E /* TipDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2E7CA029D866A90012030E /* TipDetailVC.swift */; };
+		1D2E7CA329D866A90012030E /* TipDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D2E7CA129D866A90012030E /* TipDetailVC.xib */; };
 		1D66A42829A803EC00E7F6F5 /* RewardsListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D66A42729A803EC00E7F6F5 /* RewardsListVC.xib */; };
 		1D66A42D29A8090E00E7F6F5 /* CollectRewardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66A42B29A8090E00E7F6F5 /* CollectRewardVC.swift */; };
 		1D66A42E29A8090E00E7F6F5 /* CollectRewardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D66A42C29A8090E00E7F6F5 /* CollectRewardVC.xib */; };
 		1D66A43029A80E3E00E7F6F5 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66A42F29A80E3E00E7F6F5 /* UserDefaultsManager.swift */; };
+		1D66DCF629D82335009325B1 /* TicTacToeGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66DCF429D82335009325B1 /* TicTacToeGameVC.swift */; };
+		1D66DCF729D82335009325B1 /* TicTacToeGameVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D66DCF529D82335009325B1 /* TicTacToeGameVC.xib */; };
+		1D66DCFB29D82958009325B1 /* QuotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66DCF929D82958009325B1 /* QuotesVC.swift */; };
+		1D66DCFC29D82958009325B1 /* QuotesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D66DCFA29D82958009325B1 /* QuotesVC.xib */; };
+		1D66DCFE29D82DDC009325B1 /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D66DCFD29D82DDC009325B1 /* quotes.json */; };
+		1D66DD0229D8447F009325B1 /* TipsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66DD0029D8447E009325B1 /* TipsVC.swift */; };
+		1D66DD0329D8447F009325B1 /* TipsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D66DD0129D8447E009325B1 /* TipsVC.xib */; };
 		1D7C2A1E29AB978B00D6FD0D /* coin.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C2A1C29AB978A00D6FD0D /* coin.json */; };
 		1D7C2A1F29AB978B00D6FD0D /* giftbox.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C2A1D29AB978B00D6FD0D /* giftbox.json */; };
 		1DA6F66529A7F90000433D45 /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA6F66329A7F90000433D45 /* WebViewVC.swift */; };
@@ -86,10 +97,21 @@
 		1D2D91A029AAB476008810DF /* ProcessUtill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessUtill.swift; sourceTree = "<group>"; };
 		1D2D91A329AAB653008810DF /* AnimatedSplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSplashVC.swift; sourceTree = "<group>"; };
 		1D2D91A429AAB653008810DF /* AnimatedSplashVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimatedSplashVC.xib; sourceTree = "<group>"; };
+		1D2E7C9A29D85F180012030E /* TipTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipTVC.swift; sourceTree = "<group>"; };
+		1D2E7C9B29D85F180012030E /* TipTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipTVC.xib; sourceTree = "<group>"; };
+		1D2E7CA029D866A90012030E /* TipDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipDetailVC.swift; sourceTree = "<group>"; };
+		1D2E7CA129D866A90012030E /* TipDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipDetailVC.xib; sourceTree = "<group>"; };
 		1D66A42729A803EC00E7F6F5 /* RewardsListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardsListVC.xib; sourceTree = "<group>"; };
 		1D66A42B29A8090E00E7F6F5 /* CollectRewardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectRewardVC.swift; sourceTree = "<group>"; };
 		1D66A42C29A8090E00E7F6F5 /* CollectRewardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectRewardVC.xib; sourceTree = "<group>"; };
 		1D66A42F29A80E3E00E7F6F5 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		1D66DCF429D82335009325B1 /* TicTacToeGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeGameVC.swift; sourceTree = "<group>"; };
+		1D66DCF529D82335009325B1 /* TicTacToeGameVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicTacToeGameVC.xib; sourceTree = "<group>"; };
+		1D66DCF929D82958009325B1 /* QuotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesVC.swift; sourceTree = "<group>"; };
+		1D66DCFA29D82958009325B1 /* QuotesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuotesVC.xib; sourceTree = "<group>"; };
+		1D66DCFD29D82DDC009325B1 /* quotes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = quotes.json; sourceTree = "<group>"; };
+		1D66DD0029D8447E009325B1 /* TipsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsVC.swift; sourceTree = "<group>"; };
+		1D66DD0129D8447E009325B1 /* TipsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipsVC.xib; sourceTree = "<group>"; };
 		1D7C2A1C29AB978A00D6FD0D /* coin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coin.json; sourceTree = "<group>"; };
 		1D7C2A1D29AB978B00D6FD0D /* giftbox.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = giftbox.json; sourceTree = "<group>"; };
 		1DA6F66329A7F90000433D45 /* WebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
@@ -139,6 +161,9 @@
 		18167CDB29910A590065A271 /* DD Rewards */ = {
 			isa = PBXGroup;
 			children = (
+				1D66DCFF29D8446C009325B1 /* TipsVC */,
+				1D66DCF829D82943009325B1 /* QuotesVC */,
+				1D66DCEF29D822F8009325B1 /* TicTacToeGameVC */,
 				1D22039129AE06F4007A9CB5 /* ConsentVC */,
 				1D2D91A229AAB634008810DF /* AnimatedSplashVC */,
 				1DB827BD29A9E88A00EE1471 /* CuastomViews */,
@@ -164,6 +189,7 @@
 				1D7C2A1C29AB978A00D6FD0D /* coin.json */,
 				1D7C2A1D29AB978B00D6FD0D /* giftbox.json */,
 				1D2D91A029AAB476008810DF /* ProcessUtill.swift */,
+				1D66DCFD29D82DDC009325B1 /* quotes.json */,
 				1DCB1DB029AF3BE200B29CE1 /* DateFormatManager.swift */,
 			);
 			path = "DD Rewards";
@@ -248,6 +274,24 @@
 			path = AnimatedSplashVC;
 			sourceTree = "<group>";
 		};
+		1D2E7C9529D85ECE0012030E /* TipTVC */ = {
+			isa = PBXGroup;
+			children = (
+				1D2E7C9A29D85F180012030E /* TipTVC.swift */,
+				1D2E7C9B29D85F180012030E /* TipTVC.xib */,
+			);
+			path = TipTVC;
+			sourceTree = "<group>";
+		};
+		1D2E7C9E29D8666E0012030E /* TipDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				1D2E7CA029D866A90012030E /* TipDetailVC.swift */,
+				1D2E7CA129D866A90012030E /* TipDetailVC.xib */,
+			);
+			path = TipDetailVC;
+			sourceTree = "<group>";
+		};
 		1D66A42929A808D400E7F6F5 /* RewardsListVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +308,35 @@
 				1D66A42C29A8090E00E7F6F5 /* CollectRewardVC.xib */,
 			);
 			path = CollectRewardVC;
+			sourceTree = "<group>";
+		};
+		1D66DCEF29D822F8009325B1 /* TicTacToeGameVC */ = {
+			isa = PBXGroup;
+			children = (
+				1D66DCF429D82335009325B1 /* TicTacToeGameVC.swift */,
+				1D66DCF529D82335009325B1 /* TicTacToeGameVC.xib */,
+			);
+			path = TicTacToeGameVC;
+			sourceTree = "<group>";
+		};
+		1D66DCF829D82943009325B1 /* QuotesVC */ = {
+			isa = PBXGroup;
+			children = (
+				1D66DCF929D82958009325B1 /* QuotesVC.swift */,
+				1D66DCFA29D82958009325B1 /* QuotesVC.xib */,
+			);
+			path = QuotesVC;
+			sourceTree = "<group>";
+		};
+		1D66DCFF29D8446C009325B1 /* TipsVC */ = {
+			isa = PBXGroup;
+			children = (
+				1D2E7C9E29D8666E0012030E /* TipDetailVC */,
+				1D2E7C9529D85ECE0012030E /* TipTVC */,
+				1D66DD0029D8447E009325B1 /* TipsVC.swift */,
+				1D66DD0129D8447E009325B1 /* TipsVC.xib */,
+			);
+			path = TipsVC;
 			sourceTree = "<group>";
 		};
 		1DA6F66229A7F8E000433D45 /* WebViewVC */ = {
@@ -365,6 +438,7 @@
 				1D7C2A1E29AB978B00D6FD0D /* coin.json in Resources */,
 				1D22039529AE070B007A9CB5 /* ConsentVC.xib in Resources */,
 				18167CE929910A5E0065A271 /* LaunchScreen.storyboard in Resources */,
+				1D66DCFC29D82958009325B1 /* QuotesVC.xib in Resources */,
 				1DA6F66629A7F90000433D45 /* WebViewVC.xib in Resources */,
 				1DA6F66E29A7FD8600433D45 /* PrivacyPolicyVC.xib in Resources */,
 				1885C68229912CEC00C4A159 /* TableViewCell.xib in Resources */,
@@ -373,13 +447,18 @@
 				1898F45629A785F80056098E /* OnBoardingCVC.xib in Resources */,
 				189C2CE7299D789700B79C3C /* coinicon.json in Resources */,
 				189C2CE5299CF9E100B79C3C /* GamesCVC.xib in Resources */,
+				1D66DCF729D82335009325B1 /* TicTacToeGameVC.xib in Resources */,
 				1D66A42E29A8090E00E7F6F5 /* CollectRewardVC.xib in Resources */,
+				1D66DCFE29D82DDC009325B1 /* quotes.json in Resources */,
 				1DA6F66829A7FB7C00433D45 /* HomeScreenVC.xib in Resources */,
+				1D2E7C9D29D85F180012030E /* TipTVC.xib in Resources */,
 				1D2D91A629AAB653008810DF /* AnimatedSplashVC.xib in Resources */,
 				18AB5292299FAA4D001C2797 /* rocket1.json in Resources */,
 				1DA6F66C29A7FD7700433D45 /* OnBoardingVC.xib in Resources */,
 				1DA6F66A29A7FC1A00433D45 /* GamesListVC.xib in Resources */,
+				1D66DD0329D8447F009325B1 /* TipsVC.xib in Resources */,
 				1885C68B2991411400C4A159 /* DetailVC.xib in Resources */,
+				1D2E7CA329D866A90012030E /* TipDetailVC.xib in Resources */,
 				18B4C8AD299BAB770002764A /* HomeCVC.xib in Resources */,
 				1D66A42829A803EC00E7F6F5 /* RewardsListVC.xib in Resources */,
 			);
@@ -457,15 +536,19 @@
 				18167CE129910A590065A271 /* RewardsListVC.swift in Sources */,
 				1898F45529A785F80056098E /* OnBoardingCVC.swift in Sources */,
 				1885C68129912CEC00C4A159 /* TableViewCell.swift in Sources */,
+				1D66DD0229D8447F009325B1 /* TipsVC.swift in Sources */,
+				1D2E7CA229D866A90012030E /* TipDetailVC.swift in Sources */,
 				1885C68429913AF400C4A159 /* UIColorExtension.swift in Sources */,
 				1898F45829A7B0DD0056098E /* PrivacyPolicyVC.swift in Sources */,
 				1D2D91A529AAB653008810DF /* AnimatedSplashVC.swift in Sources */,
 				1D22039429AE070B007A9CB5 /* ConsentVC.swift in Sources */,
 				1DCB1DB129AF3BE200B29CE1 /* DateFormatManager.swift in Sources */,
 				18A26288299E43B80034551A /* Services.swift in Sources */,
+				1D2E7C9C29D85F180012030E /* TipTVC.swift in Sources */,
 				18167CDD29910A590065A271 /* AppDelegate.swift in Sources */,
 				18B4C8A8299BAAC20002764A /* HomeScreenVC.swift in Sources */,
 				18A2628A299E4AA00034551A /* Rewards.swift in Sources */,
+				1D66DCFB29D82958009325B1 /* QuotesVC.swift in Sources */,
 				1D2D91A129AAB476008810DF /* ProcessUtill.swift in Sources */,
 				18B4C8AC299BAB770002764A /* HomeCVC.swift in Sources */,
 				1DA6F66529A7F90000433D45 /* WebViewVC.swift in Sources */,
@@ -475,6 +558,7 @@
 				1DB827BF29A9E89E00EE1471 /* LoadingView.swift in Sources */,
 				1885C68A2991411400C4A159 /* DetailVC.swift in Sources */,
 				1DB827C129A9E8FF00EE1471 /* UIView+Extension .swift in Sources */,
+				1D66DCF629D82335009325B1 /* TicTacToeGameVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,11 +697,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = J5MCF6VR6V;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5U84HT7D8C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DD Rewards/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "CM Rewards";
@@ -625,19 +709,23 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.theentertainerme.al-futtaim.ent";
+				PRODUCT_BUNDLE_IDENTIFIER = com.techboostapps.cmrewards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Al Futtaim Development";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = CMRStore;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -648,11 +736,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = J5MCF6VR6V;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5U84HT7D8C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DD Rewards/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "CM Rewards";
@@ -660,19 +748,23 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.theentertainerme.al-futtaim.ent";
+				PRODUCT_BUNDLE_IDENTIFIER = com.techboostapps.cmrewards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Al Futtaim Development";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = CMRStore;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

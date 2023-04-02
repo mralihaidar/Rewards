@@ -26,7 +26,7 @@ class DetailVC: UIViewController {
     var nativeAdView: UIView?
     
     @IBOutlet weak var animationView: LottieAnimationView!
-    @IBOutlet weak var mainView: UIView!
+    
     @IBOutlet weak var secondSection: UIView!
     @IBOutlet weak var firstSection: UIView!
     @IBOutlet weak var sectionDiscText: UILabel!
@@ -49,7 +49,7 @@ class DetailVC: UIViewController {
         // Do any additional setup after loading the view.
         self.navigationController?.isNavigationBarHidden = true
         
-        mainView.backgroundColor = UIColor.themeColor
+        
         backButton.tintColor = UIColor.white
         titleText.textColor = UIColor.white
         shareBtn.layer.cornerRadius = 10
@@ -104,7 +104,7 @@ class DetailVC: UIViewController {
     
     @IBAction func shareBtnPressed(_ sender: UIButton) {
         
-        let name = "I got \(dataModel?.title ?? "") from this application, try Coin Master Daily Rewards App Now: https://play.google.com/store/apps/details?id=com.mafiamasterfreespins.techboost"
+        let name = "I got \(dataModel?.title ?? "") from this application, try Coin Master Daily Rewards App Now: https://apps.apple.com/us/app/spin-master-daily-spin-link/id6446417709"
           let objectsToShare = [name]
           let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
           self.present(activityVC, animated: true, completion: nil)
@@ -113,18 +113,18 @@ class DetailVC: UIViewController {
     
     @IBAction func collectBtnPressed(_ sender: UIButton) {
         
-        if (UserDefaults.standard.isConsentShow == "1" ){
+//        if (UserDefaults.standard.isConsentShow == "1" ){
             self.collectReward()
-        }else{
-            let vc  = ConsentVC(nibName: "ConsentVC", bundle: nil)
-            vc.secreenTitle = dataModel?.title
-            vc.callback = { (added) in
-                DispatchQueue.main.async {
-                    self.collectReward()
-                }
-            }
-            self.presentPanModal(vc)
-        }
+//        }else{
+//            let vc  = ConsentVC(nibName: "ConsentVC", bundle: nil)
+//            vc.secreenTitle = dataModel?.title
+//            vc.callback = { (added) in
+//                DispatchQueue.main.async {
+//                    self.collectReward()
+//                }
+//            }
+//            self.presentPanModal(vc)
+//        }
     }
     
     func collectReward(){

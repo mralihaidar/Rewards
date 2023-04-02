@@ -29,8 +29,8 @@ class HomeScreenVC: UIViewController, MFMailComposeViewControllerDelegate {
     @IBOutlet var homeMainView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var discLabel: UILabel!
-    let homeString = ["Reward Links", "Games", "Rate the App", "Share", "Privacy Policy", "Help and Support"]
-    let homeImages = ["gift.png", "console.png", "star.png", "share.png", "shield.png", "support.png"]
+    let homeString = ["Reward Links", "Games" , "Tic Tac Toe", "Quotes", "Tips",  "Rate the App", "Share", "Privacy Policy", "Help and Support", "Terms & Conditions"]
+    let homeImages = ["gift.png", "console.png", "tictac.png", "quote.png", "tip.png",  "star.png", "share.png", "shield.png", "support.png", "termCond.png"]
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -78,7 +78,7 @@ extension HomeScreenVC: UICollectionViewDataSource, UICollectionViewDelegate, UI
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return homeString.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = homeCollectionView.dequeueReusableCell(withReuseIdentifier: "HomeCVC", for: indexPath) as! HomeCVC
@@ -95,9 +95,9 @@ extension HomeScreenVC: UICollectionViewDataSource, UICollectionViewDelegate, UI
         
         let cellWidth = (collectionView.frame.size.width - 80) / 2
         
-        let cellHeight =  (collectionView.frame.size.height - 150) / 3
+        let cellHeight =  (collectionView.frame.size.height - 250) / 3
          
-        return CGSize(width: cellWidth + 35, height: cellHeight)
+        return CGSize(width: cellWidth + 35, height: 102 )
     }
     
     
@@ -122,6 +122,21 @@ extension HomeScreenVC: UICollectionViewDataSource, UICollectionViewDelegate, UI
             
         } else if indexPath.item == 2 {
             
+            let vc = TicTacToeGameVC(nibName: "TicTacToeGameVC", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        } else if indexPath.item == 3 {
+            
+            let vc = QuotesVC(nibName: "QuotesVC", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        } else if indexPath.item == 4 {
+            
+            let vc = TipsVC(nibName: "TipsVC", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        }else if indexPath.item == 5 {
+            
             guard let scene = view.window?.windowScene else {
                 print("No Scene")
                 return
@@ -129,26 +144,36 @@ extension HomeScreenVC: UICollectionViewDataSource, UICollectionViewDelegate, UI
             if #available(iOS 14.0, *) {
                 SKStoreReviewController.requestReview(in: scene)
             } else {
-                // Fallback on earlier versions
+                if let url = URL(string: "itms-apps://itunes.apple.com/app/id6446417709") {
+                    UIApplication.shared.open(url)
+                }
+                
             }
             
-        } else if indexPath.item == 3 {
+        } else if indexPath.item == 6 {
             
-            let name = "Hey! Coin Master Fans,\n Are you out of spins and want more FREE spins then this is the right app for you!\nInstall the latest Coin Master Daily Rewards app and claim your daily FREE SPINS & COINS Now:- https://play.google.com/store/apps/details?id=com.mafiamasterfreespins.techboost"
+            let name = "Hey! Coin Master Fans,\n Are you out of spins and want more FREE spins then this is the right app for you!\nInstall the latest Coin Master Daily Rewards app and claim your daily FREE SPINS & COINS Now:- https://apps.apple.com/us/app/spin-master-daily-spin-link/id6446417709"
             
               let objectsToShare = [name]
               let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
               self.present(activityVC, animated: true, completion: nil)
 
-        } else if indexPath.item == 4 {
+        } else if indexPath.item == 7 {
             
             
             let vc = WebViewVC(nibName: "WebViewVC", bundle: nil)
             vc.webLink = self.privacyPolicyURL
             self.navigationController?.pushViewController(vc, animated: true)
 
-        } else if indexPath.item == 5 {
+        } else if indexPath.item == 8 {
             self.sendEmail()
+        } else if indexPath.item == 9 {
+            
+            
+            let vc = WebViewVC(nibName: "WebViewVC", bundle: nil)
+            vc.webLink = self.termsAndConditionURL
+            self.navigationController?.pushViewController(vc, animated: true)
+
         }
         
     }

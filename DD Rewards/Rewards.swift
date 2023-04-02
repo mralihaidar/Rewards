@@ -45,3 +45,14 @@ struct GameName: Codable {
 struct GamePng: Codable {
     let thumb: String?
 }
+
+
+struct QuotesModel : Codable {
+    let quotes: [Quotes]?
+}
+
+struct Quotes:Codable{
+    let quote : String?
+    let author : String?
+    
+}
